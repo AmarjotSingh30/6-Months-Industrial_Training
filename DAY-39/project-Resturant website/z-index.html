@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-index</title>
+    <style>
+        .box{
+            width: 100%;
+            height: 50vh;
+            position: relative;
+        }
+        .img1{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            z-index: 5;
+
+        }
+        .img2{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            z-index: 1;
+
+        }
+        .img3{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 40px;
+            top: 40px;
+            z-index: 2;
+
+        }
+        .img4{
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            left: 70px;
+            top: 70px;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/about-1.jpg" alt="" class="img1">
+        <img src="images/about-2.jpg" alt="" class="img2">
+        <img src="images/about-3.jpg" alt="" class="img3">
+        <img src="images/about-4.jpg" alt="" class="img4">
+    </div>
+</body>
+</html>

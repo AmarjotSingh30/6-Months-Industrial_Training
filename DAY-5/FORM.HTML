@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form in HTML</title>
+</head>
+<body>
+	<h1>REGISTRATION FORM</h1>
+	<form>
+		<label>Name </label><input type="text" name="" placeholder="Enter name"><br><br>
+		<label>Email </label><input type="email" name="" placeholder="Enter email"><br><br>
+		<label>Password </label><input type="password" name="" placeholder="Enter password"><br><br>
+		<label>Contact </label><input type="number" name="" placeholder="Enter contact"><br><br>
+		<label>City</label>
+		<select>
+			<option>Khanna</option>
+			<option>Ludhiana</option>
+			<option>New Delhi</option>
+		</select><br><br>
+		<label>Gender</label>
+		<input type="radio" name="gender">Male
+		<input type="radio" name="gender">Female<br><br>
+
+		<label>Hobbies</label>
+		<input type="checkbox" name="">Cricket
+		<input type="checkbox" name="">Writing
+		<input type="checkbox" name="">Reading
+		<input type="checkbox" name="">Coding<br><br>
+		<input type="submit" name="">
+		<input type="submit" name="" value="Login">
+		<input type="reset" name=""><br><br>
+
+		<!-- day-5 -->
+		<label>Color: </label><input type="color"><br><br>
+		<label>Message</label><textarea rows="10" cols="20" placeholder="Message"></textarea><br><br>
+
+		<!-- create a form like given -->
+		<label>Username:</label><input type="text" name=""><br><br>
+		<label>Password:</label><input type="password" name=""><br><br>
+		<label>City of Employement:</label><input type="text" name=""><br><br>
+		<label>Web server:</label>
+		<select>
+			<option>--choose a server--</option>
+			<option>1.</option>
+			<option>2.</option>
+		</select><br><br>
+		<label>Please specify your role:</label><input type="radio" name="role">Admin
+		<input type="radio" name="role">Engineer
+		<input type="radio" name="role">Manager
+		<input type="radio" name="role">Guest<br><br>
+		<label>Single Sign-on to the following:</label><input type="checkbox" name="">mail<input type="checkbox" name="">payroll<input type="checkbox" name="">self-service<br><br>
+		<input type="submit" name="" value="login">
+		<input type="submit" name="">
+	</form>
+
+	<!-- form+table usage -->
+	<form>
+	<table>
+		<tr>
+			<th>Name</th>
+			<td><input type="" name="">	</td>
+		</tr>
+		<tr>
+			<th>Email</th>
+			<td><input type="email" name=""></td>
+		</tr>
+		<tr>
+			<th>Password</th>
+			<td><input type="password" name=""></td>
+		</tr>
+	</table>
+	</form>
+
+	<!-- task create table like given -->
+	<form>
+		<table bgcolor="pink">
+			<h1>Student Registration Form</h1>
+			<tr>
+				<th>Roll no :</th>
+				<td><input type="number" name=""></td>
+			</tr>
+			<tr>
+				<th>Student name :</th>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<th>Father's name :</th>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<!-- dob -->
+				<th>Date of Birth :</th>
+				<td>
+					<select>
+					<option>date</option>
+					<option>1</option>
+					<option>2</option>
+					</select>
+					<select>
+					<option>month</option>
+					<option>jan</option>
+					</select>
+					<select>
+					<option>year</option>
+					<option>1999</option>
+					</select>
+			</td>
+			</tr>
+			<!-- dob -->
+			<!-- mobile no -->
+			<tr>
+			<th>Mobile no :</th>
+			<td><input type="number"></td>
+			</tr>
+			<!-- mobile no -->
+			<tr>
+				<th>Email id :</th>
+				<td><input type="email" name=""></td>
+			</tr>
+			<tr>
+				<th>Password :</th>
+				<td><input type="password" name=""></td>
+			</tr>
+			<tr>
+				<th>Gender :</th>
+				<td><input type="radio" name="gender">male
+					<input type="radio" name="gender">female
+				</td>
+			</tr>
+			<tr>
+				<th>Department :</th>
+				<td><input type="checkbox" name="">cse
+					<input type="checkbox" name="">it
+					<input type="checkbox" name="">ece
+					<input type="checkbox" name="">civil
+					<input type="checkbox" name="">mech</td>
+			</tr>
+			<tr>
+				<th>Course :</th>
+				<td><select>
+					<option>---select current courses--</option>
+					<option>BTECH</option>
+					<option>MBA</option>
+					<option>BCA</option>
+				</select></td>
+			</tr>
+			<tr>
+				<th>Photo</th>
+				<td><input type="file" name=""></td>
+			</tr>
+			<tr>
+				<th>City :</th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th>Address :</th>
+				<td><textarea rows="2" cols="20"></textarea></td>
+			</tr>
+		</table>
+		<input type="submit" name="" value="Register">
+	</form>
+
+	<!-- task- create table like given -->
+	<form>
+		<table bgcolor="purple">
+			<h1>Student Registration Form</h1>
+			<tr>
+				<th>FIRST NAME</th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th>LAST NAME</th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th>DATE OF BIRTH</th>
+				<td>
+					<select>
+						<option>date</option>
+						<option>1</option>
+					</select>
+					<select>
+						<option>month</option>
+						<option>july</option>
+					</select>
+					<select>
+						<option>year</option>
+						<option>2000</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<th>EMAIL ID</th>
+				<td><input type="email"></td>
+			</tr>
+			<tr>
+				<th>MOBILE NO</th>
+				<td><input type="number"></td>
+			</tr>
+			<tr>
+				<th>GENDER</th>
+				<td><input type="radio" name="gender">male
+					<input type="radio" name="gender">female
+				</td>
+			</tr>
+			<tr>
+				<th>ADDRESS</th>
+				<td><textarea rows="2" cols="20"></textarea>
+				</td>
+			</tr>
+			<tr>
+				<th>CITY</th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th>PIN CODE</th>
+				<td><input type="number"></td>
+			</tr>
+			<tr>
+				<th>STATE</th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th>COUNTRY</th>
+				<td><input type="text"></td>
+			</tr>
+			<tr>
+				<th>HOBBIES</th>
+				<td><input type="checkbox">Drwaing
+					<input type="checkbox">Singing
+					<input type="checkbox">Dancing
+					<input type="checkbox">Sketching
+					<input type="checkbox">other<input type="text">
+				</td>
+			</tr>
+			<tr>
+				<th>QUALIFICATION</th>
+				<td>
+					<table>
+						<tr>
+							<th>Sr.No.</th>
+							<th>Examination</th>
+							<th>Board</th>
+							<th>Percentage</th>
+							<th>Year of Passing</th>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>Class 10</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>Class 12</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>Graduation</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+						<tr>
+							<td>4</td>
+							<td>Masters</td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+							<td><input type="text"></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		<tr>
+			<th>courses applied for </th>
+			<td><input type="radio" name="course">BCA
+			<input type="radio" name="course">B.Com
+			<input type="radio" name="course">B.Sc
+			<input type="radio" name="course">B.A</td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="submit"><input type="reset"></td>
+		</tr>
+		</table>
+	</form>
+
+
+</body>
+</html>

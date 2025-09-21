@@ -1,0 +1,139 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 1000vh;
+    border: 5px solid black;
+    font-family: "Nunito", sans-serif;
+    padding-top:0.1%;
+}
+.header-box1{
+    width: 100%;
+    height: 13%;
+    /* border: 2px solid red; */
+    background:linear-gradient(rgba(15, 23, 43, 0.9),rgba(15, 23, 43, 0.9)),url("images/bg-hero.jpg");
+    /* position:relative; */
+}
+/* ------NAVBAR--------- */
+.navbar{
+    width: 100%;
+    height: 10%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    /* position: fixed; */
+}
+.navbar-left{
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid blue; */
+    text-align: center;
+    padding-top: 1%;
+}
+.navbar-left h1{
+    font-size:38px;
+    color: rgba(254,161,22,1);
+    /* font-family: "Nunito", sans-serif; */
+}
+.navbar-left i{
+    margin-right:3%;
+}
+.navbar-center{
+    width: 60%;
+    height: 100%;
+    /* border: 2px solid green; */
+    text-align:center;
+    padding-top: 2.2%;
+    padding-left:28%;
+}
+.navbar-center ul li{
+    display:inline;
+}
+.navbar-center a{
+    font-size: 15px;
+    color:white;
+    text-decoration: none;
+    padding-right: 2%;
+    font-weight: bolder;
+}
+.navbar-right{
+    width:20%;
+    height: 100%;
+    /* border: 2px solid aqua; */
+    align-content: center;
+}
+.navbar-right button{
+    background-color:rgba(254,161,22,1);
+    color:white;
+    padding:5% 10% 5% 10%;
+    border:none;
+    font-size: 1rem;
+    margin-left:4%;
+    font-weight: bolder;
+    margin-top: 5%;
+    border-radius:2%;
+}
+/* ------NAVBAR--------- */
+.header-in-box{
+    width: 100%;
+    height: 80%;
+    border: 2px solid red;
+}
+.header-in-leftbox{
+    width: 50%;
+    height: 100%;
+    border: 2px solid yellow;
+}
+/* ------ HEADER-TEXT-BOX------ */
+.header-text-box{
+    width: 90%;
+    height: 70%;
+    border:2px solid aqua;
+    margin-left: 8%;
+    margin-top:13%;
+}
+.header-text-box h1{
+    color: white;
+    font-size:59px;
+    font-weight: bold;
+}
+.header-text-box p{
+    color: white;
+    font-size:17px;
+    line-height: 4vh;
+    text-align: left;
+    padding-right:19%;
+    padding-top: 2%;
+}
+.header-text-box button{
+    background-color:rgba(254,161,22,1);
+    color:white;
+    padding:3% 5% 3% 5%;
+    border:none;
+    font-size: 1rem;
+    font-weight: bolder;
+    margin-top: 5%;
+    border-radius:2%;
+}
+/* ------ HEADER-TEXT-BOX------ */
+/* -----PIZZA BOX-----  */
+.pizza-box{
+    width: 38%;
+    height: 79%;
+    /* border: 2px solid red; */
+    position:absolute;
+    left:52%;
+    top:25%;
+}
+.pizza-box img{
+    height: 100%;
+    width: 100%;
+    animation:rotatePizza 30s linear infinite;
+}
+@keyframes rotatePizza{
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
+}
+/* -----PIZZA BOX-----  */

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        .box{
+            width:90%;
+            height: 30vh;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .box-in{
+            width: 23%;
+            height: 25vh;
+            background-color: blueviolet;
+        }
+        .box-inr{
+            width: 23%;
+            height: 25vh;
+            background-color: sandybrown;
+            position: relative;
+            left: 10%;
+            top:12%;
+        }
+        .box-ina{
+            width: 23%;
+            height: 25vh;
+            background-color: sandybrown;
+            position: absolute;
+            left: 10%;
+            top: 50%;
+        }
+        .box-inf{
+            width: 100%;
+            height: 10vh;
+            background-color: seagreen;
+            position: fixed;
+            left: 0%;
+            top: 0%;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="box-in"></div>
+        <div class="box-inr"></div>
+        <div class="box-in"></div>
+        <div class="box-in"></div>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officia vitae, voluptatibus aliquam maiores obcaecati minus laborum voluptatum aspernatur quos perferendis cumque pariatur non modi libero nostrum temporibus aut natus.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officia vitae, voluptatibus aliquam maiores obcaecati minus laborum voluptatum aspernatur quos perferendis cumque pariatur non modi libero nostrum temporibus aut natus.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officia vitae, voluptatibus aliquam maiores obcaecati minus laborum voluptatum aspernatur quos perferendis cumque pariatur non modi libero nostrum temporibus aut natus.</p>
+    <div class="box">
+        <div class="box-in"></div>
+        <div class="box-ina"></div>
+        <div class="box-in"></div>
+        <div class="box-in"></div>
+    </div>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officia vitae, voluptatibus aliquam maiores obcaecati minus laborum voluptatum aspernatur quos perferendis cumque pariatur non modi libero nostrum temporibus aut natus.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officia vitae, voluptatibus aliquam maiores obcaecati minus laborum voluptatum aspernatur quos perferendis cumque pariatur non modi libero nostrum temporibus aut natus.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio officia vitae, voluptatibus aliquam maiores obcaecati minus laborum voluptatum aspernatur quos perferendis cumque pariatur non modi libero nostrum temporibus aut natus.</p>
+    <div class="box">
+        <div class="box-in"></div>
+        <div class="box-inf"></div>
+        <div class="box-in"></div>
+        <div class="box-in"></div>
+    </div>
+</body>
+</html>

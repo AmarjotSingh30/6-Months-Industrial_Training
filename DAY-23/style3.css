@@ -1,0 +1,28 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 25px;
+    color :rgb(67, 162, 179);
+    padding: 2% 0% 0% 1%;
+}
+.box2{
+    width: 90%;
+    height: 90vh;
+    margin: auto;
+    border: 5px solid yellow;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.img-box1{
+    width: 23%;
+    height: 20vh;
+    border: 1px solid black;
+}
+.img-box1 img{
+    width: 100%;
+    height: 100%;
+}

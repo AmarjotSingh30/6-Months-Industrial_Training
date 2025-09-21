@@ -1,0 +1,1309 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 1100vh;
+    border: 1px solid BLACK;
+    display: flex;
+}
+/* side bar */
+.side-bar{
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid red; */
+    background-color: rgba(4,11,20,1);
+}
+.side-bar-box1{
+    width: 100%;
+    height: 2%;
+    /* border: 2px solid yellow; */
+    margin-top: 6%;
+}
+.side-bar-box1-background-circle-img{
+    width: 47%;
+    height: 90%;
+    border:7px solid rgb(14, 26, 41);
+    border-radius: 100%;
+    margin-left: 26%;
+}
+.side-bar-box1-background-circle-img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.side-bar-box1-textbox{
+    width: 100%;
+    height: 0.7%;
+    /* border: 2px solid green; */
+    text-align: center;
+    color: white;
+    font-weight: lighter;
+    font-family: arial;
+    font-size:13px;
+}
+.side-bar-box1-iconbox{
+    width: 100%;
+    height: 1%;
+    /* border: 2px solid purple; */
+    display: flex;
+    padding-left: 4%;
+}
+.side-bar-box1-iconbox-background-circle{
+    width:16%;
+    height: 58%;
+    background-color:rgb(14, 26, 41);
+    border-radius:100%;
+    margin-left: 3%;
+}
+.side-bar-box1-iconbox-background-circle i{
+    color: white;
+    font-size: 19px;
+    padding: 24% 0% 0% 30%;
+}
+.navigation-list{
+    width: 100%;
+    height: 5%;
+    /* border: 2px solid orange; */
+    padding-left: 8%;
+}
+.navigation-list ul li{
+    line-height: 8vh;
+    list-style: none;
+}
+.navigation-list a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: lighter;
+    font-family: arial;
+}
+.navigation-list i{
+    color: white;
+    padding-right: 10%;
+}
+/* side bar */
+.main-content{
+    width: 80%;
+    height: 100%;
+    /* border: 5px solid yellow; */
+    background-color: white;
+}
+/* --------------box 1------------------- */
+.box-1{
+    width: 100%;
+    height: 11%;
+    /* border:2px solid green; */
+    background-color:white;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url(images/img_1.jpg);
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+}   
+.box-1 h1{
+    color: white;
+    font-size: 65px;
+    font-weight: bolder;
+    padding: 20% 0% 0% 2%;
+}
+.box-1 p{
+    color: white;
+    font-size: 35px;
+    padding: 0% 0% 0% 2%;
+}
+/* --------------box 1------------------- */
+
+/*--------------- about-us  box----------- */
+.about-us{
+    width: 100%;
+    height: 10%;
+    /* border: 2px solid purple; */
+    background-color: white;
+    margin-top: 6%;
+    padding-left:2% ;
+}
+.about-us h1{
+    font-weight: bolder;
+    font-family: arial;
+}
+.underline1{
+     width: 5%;
+     /* background-color :rgb(167, 192, 22); */
+     border:2px solid rgb(39, 163, 212); 
+     margin:2% 0% 2% 0%;
+ }  
+.about-us p{
+    font-size:17px;
+    font-weight: lighter;
+    font-family: arial;
+    line-height: 4vh;
+}
+.img-box{
+    width: 100%;
+    height: 50%;
+    /* border: 5px solid orange; */
+    margin-top: 5%;
+    display: flex;
+}
+.left-box{
+    width: 40%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+.left-box img{
+    width: 100%;
+    height: 99%;
+}
+.right-box{
+    width: 80%;
+    height: 100%;
+    /* border: 2px solid green; */
+    margin-left: 2%;
+}
+.right-box h1{
+    font-family: arial;
+    font-size: 25px;
+}
+.right-box p{
+    padding: 4% 4% 0% 0%;
+    font-size: 16px;
+    font-weight: lighter;
+}
+.arrows{
+    width: 100%;
+    height: 62%;
+    /* border:2px solid black; */
+    display: flex;
+    margin-top: 6%;
+}
+.left-arrows{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+.left-arrows ul li{
+    list-style: none;
+    padding: 2% 0% 2% 0%;
+    padding: 2% 0% 6% 0%;
+    font-size: 17px;
+    font-family: arial;
+}
+.left-arrows i{
+    color: skyblue;
+}
+.right-arrows{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+.right-arrows ul li{
+    list-style: none;
+    padding: 2% 0% 6% 0%;
+    font-size: 17px;
+    font-family: arial;
+}
+.right-arrows i{
+    color: skyblue;
+}
+.bottom-para{
+    width: 100%;
+    height: 15%;
+    /* border:2px solid green; */
+}
+.bottom-para p{
+    color:rgb(63, 62, 62);
+    font-size: 16px;
+    font-weight: lighter;
+    padding: 0% 0% 0% 36%;
+    line-height: 4vh;
+}
+/*----------------- about-us  box------------------- */
+
+
+/*--------------- icon  box----------- */
+.icon-box{
+    width: 100%;
+    height: 4%;
+    /* border: 2px solid orange; */
+    background-color: white;
+    /* margin-top: 1%; */
+    display:flex;
+}
+.in-box1{
+    width: 25%;
+    height: 50%;
+    /* border: 2px solid red; */
+    display: flex;
+    margin-top: 8%;
+}
+.left-icon-box{
+    width: 30%;
+    height: 100%;
+    /* border:2px solid yellow; */
+    text-align: center;
+    margin-left: 10%;
+}
+.left-icon-box i{
+    color: rgb(39, 163, 212);
+    font-size: 8vh;
+}
+.right-icon-box{
+    width: 50%;
+    height: 100%;
+    /* border:2px solid green; */
+}
+.right-icon-box h1{
+    font-size: 40px;
+    font-family: arial;
+}
+.right-icon-box h2{
+    font-size: 15px;
+    font-family: arial;
+    padding-top: 4%;
+}
+.right-icon-box p{
+    font-size: 15px;
+    font-family: arial;
+    padding-top: 4%;
+}
+/*--------------- icon  box----------- */
+
+/*--------------- skill  box----------- */
+.skills{
+    width: 100%;
+    height: 5%;
+    /* border: 2px solid purple; */
+    background-color: rgba(244,250,253,1);
+    margin-top: 4%;
+    padding-left:2%;
+}
+.skills h1{
+    font-weight: bolder;
+    font-family: arial;
+}
+.underline2{
+    width: 5%;
+     /* background-color :rgb(167, 192, 22); */
+     border:2px solid rgb(39, 163, 212); 
+     margin:2% 0% 2% 0%;
+}
+.skills p{
+     font-size:17px;
+    font-weight: lighter;
+    font-family: arial;
+    line-height: 4vh;
+}
+.bar-box{
+    width:100%;
+    height: 60%;
+    /* border: 2px solid red; */
+    margin-top: 2%;
+    display: flex;
+}
+.left-bar-box{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid blue; */
+}
+.right-bar-box{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid orange; */
+}
+.in-box2{
+    width: 100%;
+    height: 25%;
+    /* background-color: aqua; */
+}
+.dbi-box1{
+    width: 100%;
+    height: 50%;
+   /
+}
+.dbi-box1 h5{
+    display: inline-block;
+}
+.dbi-box1 h6{
+    display: inline-block;
+    padding-left:80%;
+}
+.dbi-box2{
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+}
+.real-bar{
+    width: 94%;
+    height: 35%;
+    /* border: 2px solid black; */
+    background-color :rgb(39, 163, 212);
+}
+
+/* css bar */
+.in-box3{
+    width: 100%;
+    height: 25%;
+    /* background-color: aqua; */
+}
+.dbi-box2{
+    width: 100%;
+    height: 50%;
+   /
+}
+.dbi-box2 h5{
+    display: inline-block;
+}
+.dbi-box2 h6{
+    display: inline-block;
+    padding-left:84%;
+}
+.dbi-box3{
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+}
+.real-bar1{
+    width: 94%;
+    height: 35%;
+    /* border: 2px solid black; */
+    background-color :rgb(238, 230, 230);
+}
+.half-bar{
+    width: 90%;
+    height: 100%;
+    background-color:rgb(39, 163, 212);
+}
+/* css bar */
+
+/* Javascript bar */
+.in-box4{
+    width: 100%;
+    height: 25%;
+    /* background-color: aqua; */
+}
+.dbi-box3{
+    width: 100%;
+    height: 50%;
+}
+.dbi-box3 h5{
+    display: inline-block;
+}
+.dbi-box3 h6{
+    display: inline-block;
+    padding-left:77%;
+}
+.dbi-box4{
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+}
+.real-bar2{
+    width: 94%;
+    height: 35%;
+    /* border: 2px solid black; */
+    background-color :rgb(238, 230, 230);
+}
+.half-bar1{
+    width: 75%;
+    height: 100%;
+    background-color:rgb(39, 163, 212);
+}
+/* javascript bar */
+
+/* PHP bar */
+.in-box5{
+    width: 100%;
+    height: 25%;
+    /* background-color: aqua; */
+}
+.dbi-box4{
+    width: 100%;
+    height: 50%;
+}
+.dbi-box4 h5{
+    display: inline-block;
+}
+.dbi-box4 h6{
+    display: inline-block;
+    padding-left:83%;
+}
+.dbi-box5{
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+}
+.real-bar3{
+    width: 94%;
+    height: 35%;
+    /* border: 2px solid black; */
+    background-color :rgb(238, 230, 230);
+}
+.half-bar2{
+    width: 80%;
+    height: 100%;
+    background-color:rgb(39, 163, 212);
+}
+/* PHP bar */
+
+/* WORDPRESS bar */
+.in-box6{
+    width: 100%;
+    height: 25%;
+    /* background-color: aqua; */
+}
+.dbi-box5{
+    width: 100%;
+    height: 50%;
+}
+.dbi-box5 h5{
+    display: inline-block;
+}
+.dbi-box5 h6{
+    display: inline-block;
+    padding-left:67%;
+}
+.dbi-box6{
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+}
+.real-bar4{
+    width: 94%;
+    height: 35%;
+    /* border: 2px solid black; */
+    background-color :rgb(238, 230, 230);
+}
+.half-bar3{
+    width: 90%;
+    height: 100%;
+    background-color:rgb(39, 163, 212);
+}
+/* WORDPRESS bar */
+
+/* PHOTOSHOP bar */
+.in-box7{
+    width: 100%;
+    height: 25%;
+    /* background-color: aqua; */
+}
+.dbi-box6{
+    width: 100%;
+    height: 50%;
+}
+.dbi-box6 h5{
+    display: inline-block;
+}
+.dbi-box6 h6{
+    display: inline-block;
+    padding-left:73%;
+}
+.dbi-box7{
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+}
+.real-bar5{
+    width: 94%;
+    height: 35%;
+    /* border: 2px solid black; */
+    background-color :rgb(238, 230, 230);
+}
+.half-bar4{
+    width: 55%;
+    height: 100%;
+    background-color:rgb(39, 163, 212);
+}
+/* PHOTOSHOP bar */
+/*--------------- icon  box----------- */
+
+/*--------------- resume  box----------- */
+.resume{
+    width: 100%;
+    height: 17%;
+    /* border: 2px solid red; */
+    margin-top: 6%;
+    background-color: white;
+    padding-left:2%;
+}
+.resume h1{
+    font-weight: bolder;
+    font-family: arial;
+}
+.underline3{
+     width: 5%;
+     /* background-color :rgb(167, 192, 22); */
+     border:2px solid rgb(39, 163, 212); 
+     margin:2% 0% 2% 0%;
+    /* width: 5%;
+    border-bottom: 4px solid skyblue;
+    margin:2% 0% 2% 0%; */
+}
+.resume p{
+    font-size:17px;
+    font-weight: lighter;
+    font-family: arial;
+    line-height: 4vh;
+}
+
+.sub-box{
+    width: 100%;
+    height: 40%;
+    /* border: 2px solid red; */
+    /* background-color: yellow; */
+    margin-top: 6%;
+    display: flex;
+}
+.sub-box-left{
+    width: 50%;
+    height: 100%;
+    /* background-color: red; */
+    /* border: 2px solid blue; */
+}
+/* sumary */
+.ddin1{
+    width: 100%;
+    height:12%;
+    /* border: 2px solid red; */
+}
+.ddin1 h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.ddin2{
+    width: 100%;
+    height: 61%;
+    /* background-color: orange; */
+    border-left: 2px solid rgba(20,157,221,1);
+}
+.ddin2 h2{
+    font-size: 20px;
+    font-weight: lighter;
+    padding-left:4%;
+}
+.ddin2 p{
+    font-style: italic;
+    font-size: 17px;
+    padding-left:4%;
+    padding-top: 2%;
+}
+.list{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid red; */
+    margin-top: 2%;
+}
+.list ul li{
+    margin-left:6%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+
+/* .ddin5 h3{
+    font-size: 15px;
+    padding-left: 6%;
+    padding-top: 2%;
+    font-weight: 600;
+    background-color: red;
+}
+.ddin5 h4{
+    padding-top: 4%;
+    padding-left:4%;
+    font-weight: lighter;
+    background-color: red;
+} */
+/* sumary */
+
+/* education box */
+.ddin3{
+    width: 100%;
+    height:12%;
+    margin-top: 6%;
+    /* border: 2px solid red; */
+}
+.ddin3 h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.ddin5{
+    width: 100%;
+    height: 50%;
+    /* background-color: green; */
+    /* margin-top: 6%; */
+    border-left: 2px solid rgba(20,157,221,1);
+}
+.ddin5 h2{
+    font-size: 20px;
+    font-weight: lighter;
+    padding-left:4%;
+}
+.ddin5 p{
+    font-style: italic;
+    font-size: 17px;
+    padding-left:4%;
+    padding-top: 2%;
+}
+.ddin5 h3{
+    font-size: 15px;
+    padding-left: 6%;
+    padding-top: 2%;
+    font-weight: 600;
+}
+.ddin5 h4{
+    padding-top: 4%;
+    padding-left:4%;
+    font-weight: lighter;
+}
+/* education box */
+
+/* btech */
+.ddin4{
+    width: 100%;
+    height: 55%;
+    /* border: 2px solid red;
+    background-color: red; */
+    margin-top: 6%;
+    border-left: 2px solid rgba(20,157,221,1);
+}
+.ddin4 h2{
+    font-size: 20px;
+    font-weight: lighter;
+    padding-left:4%;
+}
+.ddin4 p{
+    font-style: italic;
+    font-size: 17px;
+    padding-left:4%;
+    padding-top: 2%;
+}
+.ddin4 h3{
+    font-size: 15px;
+    padding-left: 6%;
+    padding-top: 2%;
+    font-weight: 600;
+}
+.ddin4 h4{
+    padding-top: 4%;
+    padding-left:4%;
+    font-weight: lighter;
+}
+/* b tech */
+
+/* right box start here */
+.sub-box-right{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid purple;
+    background-color: yellow; */
+}
+/* PROFESSIONAL EXPERIENCE */
+.ddin6{
+    width: 100%;
+    height:12%;
+    /* border: 2px solid red; */
+}
+.ddin6 h1{
+    font-size: 25px;
+    font-weight: bold;
+}
+.ddin7{
+    width: 100%;
+    height: 110%;
+    /* background-color: yellow; */
+    border-left: 2px solid rgba(20,157,221,1);
+}
+.ddin7 h2{
+    font-size: 20px;
+    font-weight: lighter;
+    padding-left:4%;
+}
+.ddin7 h3{
+    font-size: 15px;
+    padding-left: 6%;
+    padding-top: 2%;
+    font-weight: 600;
+}
+.ddin7 p{
+    font-style: italic;
+    font-size: 17px;
+    padding-left:4%;
+    padding-top: 2%;
+}
+.list{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid red; */
+    margin-top: 2%;
+}
+.list ul li{
+    margin-left:6%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+
+/* .ddin5 h3{
+    font-size: 15px;
+    padding-left: 6%;
+    padding-top: 2%;
+    font-weight: 600;
+    background-color: red;
+}
+.ddin5 h4{
+    padding-top: 4%;
+    padding-left:4%;
+    font-weight: lighter;
+    background-color: red;
+} */
+/* PROFESSIONAL EXPERIENCE */
+
+/* SENIOR GRAPHIC */
+/* .ddin6{
+    width: 100%;
+    height:6%;
+    border: 2px solid red;
+}
+.ddin6 h1{
+    font-size: 25px;
+    font-weight: bold;
+} */
+.ddin8{
+    width: 100%;
+    height: 77%;
+    margin-top: 6%;
+    /* border: 2px solid red; */
+    border-left: 2px solid rgba(20,157,221,1);
+}
+.ddin8 h2{
+    font-size: 20px;
+    font-weight: lighter;
+    padding-left:4%;
+}
+.ddin8 h3{
+    font-size: 15px;
+    padding-left: 6%;
+    padding-top: 2%;
+    font-weight: 600;
+}
+.ddin8 p{
+    font-style: italic;
+    font-size: 17px;
+    padding-left:4%;
+    padding-top: 2%;
+}
+.list{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid red; */
+    margin-top: 2%;
+}
+.list ul li{
+    margin-left:6%;
+    padding-bottom: 1%;
+    padding-top: 2%;
+}
+
+/* .ddin5 h3{
+    font-size: 15px;
+    padding-left: 6%;
+    padding-top: 2%;
+    font-weight: 600;
+    background-color: red;
+}
+.ddin5 h4{
+    padding-top: 4%;
+    padding-left:4%;
+    font-weight: lighter;
+    background-color: red;
+} */
+/* SENIOR GRAPHIC */
+
+/*--------------- resume  box----------- */
+
+/*--------------- portfolio box----------- */
+.port{
+    width: 100%;
+    height: 18%;
+    /* border: 2px solid red; */
+    margin-top: 8%;
+    padding-left:2%;
+    background-color: white;
+}
+.port h1{
+    font-weight: bolder;
+    font-family: arial;
+}
+.underline4{
+     width: 5%;
+     /* background-color :rgb(167, 192, 22); */
+     border:2px solid rgb(39, 163, 212); 
+     margin:2% 0% 2% 0%;
+    /* width: 5%;
+    border-bottom: 4px solid skyblue;
+    margin:2% 0% 2% 0%; */
+}
+.port p{
+    font-size:17px;
+    font-weight: lighter;
+    font-family: arial;
+    line-height: 4vh;
+}
+.navbar{
+    width: 100%;
+    height: 4%;
+    /* border: 2px solid blue; */
+    background-color: white;
+    margin-top:4%;
+    text-align: center;
+    padding-top: 2%;
+}
+.navbar ul li{
+    display: inline;
+}
+.navbar a{
+    font-size: 13px;
+    font-family: arial;
+    color: black;
+    text-decoration: none;
+    padding-right:2% ;
+}
+.img-section{
+    width: 100%;
+    height: 80%;
+    /* border: 2px solid red; */
+    background-color: white;
+    justify-content:space-around;
+    margin-top: 1%;
+    /* flex-wrap: wrap; */
+}
+
+.img-section img{
+    width:31%;
+    height: 22%;
+    margin-right:2%;
+    margin-bottom: 2%;
+}
+/*--------------- portfolio box----------- */
+
+
+/*--------------- services box----------- */
+.services{
+    width: 100%;
+    height: 7%;
+    /* border: 2px solid green; */
+    background-color: white;
+    /* margin-top:6%; */
+    padding-left:2%;
+}
+.services h1{
+    font-weight: bolder;
+    font-family: arial;
+}
+.underline5{
+     width: 5%;
+     /* background-color :rgb(167, 192, 22); */
+     border:2px solid rgb(39, 163, 212); 
+     margin:2% 0% 2% 0%;
+    /* width: 5%;
+    border-bottom: 4px solid skyblue;
+    margin:2% 0% 2% 0%; */
+}
+.services p{
+    font-size:17px;
+    font-weight: lighter;
+    font-family: arial;
+    line-height: 4vh;
+}
+.tpin{
+    width:100%;
+    height: 50%;
+    /* border:2px solid red; */
+    /* background-color: yellow; */
+    margin-top: 6%;
+    /* border: 2px solid black; */
+}
+/* 1st box */
+.tpin2{
+    width: 100%;
+    height: 45%;
+    background-color:white;
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+/* left-side-box */
+.tpin2-left{
+    width: 34%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display:flex;
+}
+.tpin2-left-iconbox{
+    width:20%;
+    height: 100%;
+    /* background-color: red; */
+    /* border: 2px solid yellow; */
+    margin-right: 4%;
+    /* padding-top:%; */
+    /* padding-left:8%; */
+}
+.icon-circle{
+    width: 90%;
+    height: 40%;
+    /* border: 2px solid yellow; */
+    background-color: rgba(20,157,221,1);
+    text-align: center;
+    align-content: center;
+    border-radius: 100%;
+}
+.icon-circle i{
+    color:white;
+    font-size: 25px;
+}
+.tpin2-right{
+    width:90%;
+    height: 100%;
+    /* border: 2px solid red; */
+    background-color: white;
+}
+.tpin2-right h1{
+    font-size: 20px;
+}
+.tpin2-right p{
+    font-size: 14px;
+    padding-top: 6%;
+    line-height: 4vh;
+}
+/* left-side-box */
+/*1st box  */
+
+/* 2nd box */
+.tpin3{
+    width: 100%;
+    height: 45%;
+    background-color:white;
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-between;
+    /* margin-top: 1%; */
+}
+/* left-side-box */
+.tpin3-left{
+    width: 34%;
+    height: 100%;
+    /* border: 2px solid black; */
+    display:flex;
+}
+.tpin3-left-iconbox{
+    width:20%;
+    height: 100%;
+    /* background-color: red; */
+    /* border: 2px solid yellow; */
+    margin-right: 4%;
+    /* padding-top:%; */
+    /* padding-left:8%; */
+}
+.icon-circle{
+    width: 90%;
+    height: 40%;
+    /* border: 2px solid yellow; */
+    background-color: rgba(20,157,221,1);
+    text-align: center;
+    align-content: center;
+    border-radius: 100%;
+}
+.icon-circle i{
+    color:white;
+    font-size: 25px;
+}
+.tpin3-right{
+    width:90%;
+    height: 100%;
+    /* border: 2px solid red; */
+    background-color: white;
+}
+.tpin3-right h1{
+    font-size: 20px;
+}
+.tpin3-right p{
+    font-size: 14px;
+    padding-top: 6%;
+    line-height: 4vh;
+}
+/* left-side-box */
+/*2nd box  */
+/*--------------- services box----------- */
+
+/*--------------- testimonials box----------- */
+.testimonials{
+    width: 100%;
+    height: 8%;
+    /* border: 2px solid purple; */
+    margin-top:2%;
+    padding-left: 2%;
+}
+.testimonials h1{
+    font-weight: bolder;
+    font-family: arial;
+}
+.underline6{
+       width: 5%;
+     /* background-color :rgb(167, 192, 22); */
+     border:2px solid rgb(39, 163, 212); 
+     margin:2% 0% 2% 0%;
+    /* width: 5%;
+    border-bottom: 4px solid skyblue;
+    margin:2% 0% 2% 0%; */
+}
+.testimonials p{
+    font-size:17px;
+    font-weight: lighter;
+    font-family: arial;
+    line-height: 4vh;
+}
+.test-in-box{
+   width:100%;
+   height: 30%;
+   /* border: 5px solid red; */
+   margin-top: 4%; 
+   display: flex;
+   justify-content: space-evenly;
+}
+.test-in-leftbox{
+    width: 31%;
+    height: 100%;
+    /* border: 1px solid grey; */
+    border-radius: 2%;
+    text-align: center;
+    padding-top: 3%;
+}
+.test-in-leftbox i{
+    color: rgba(20,157,221,1);
+    font-size: 23px;
+}
+.test-in-leftbox p{
+    font-size: 17px;
+    font-weight: lighter;
+}
+.test-in-box2{
+    width: 100%;
+    height: 28%;
+    /* border: 2px solid yellow; */
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+.test-in-box2-leftbox{
+    width: 31%;
+    height: 100%;
+    /* border: 2px solid green; */
+}
+.test-in-box2-leftbox-imgbox{
+    width: 50%;
+    height:70%;
+    /* border: 2px solid purple; */
+    margin-left: 29%;
+    /* background-color: black; */
+
+}
+.test-in-box2-leftbox-imgbox img{
+    width: 55%;
+    height: 85%;
+    border-radius: 100%;
+    margin-left: 18%;
+}
+.test-in-box2-leftbox-textbox{
+    width: 100%;
+    height: 30%;
+    /* border:2px solid black; */
+    text-align: center;
+    padding-left:6% ;
+}
+.test-in-box2-leftbox-textbox h5{
+    font-size: 20px;
+}
+.test-in-box2-leftbox-textbox p{
+    font-size: 15px;
+}
+/*--------------- testimonials box----------- */
+
+/*--------------- contact box----------- */
+.contact{
+    width: 100%;
+    height: 12%;
+    /* border: 2px solid red; */
+    margin-top: 12%;
+    padding-left:2% ;
+}
+.contact h1{
+    font-weight: bolder;
+    font-family: arial;
+}
+.underline{
+    width: 5%;
+    border-bottom: 4px solid skyblue;
+    margin:2% 0% 2% 0%;
+}
+.contact p{
+    font-size:19px;
+    font-weight: lighter;
+    font-family: arial;
+}
+.contact-in-box{
+    width: 100%;
+    height: 75%;
+    /* border: 2px solid black; */
+    margin-top: 6%;
+    display: flex;
+    justify-content: space-between;
+}
+/* ----- inside-leftbox */
+.contact-in-leftbox{
+    width: 37%;
+    height: 100%;
+    border: 1px solid grey;
+}
+/* -----inside box[icon+textbox]----- */
+.contact-in-leftbox-box1{
+    width: 90%;
+    height: 10%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    margin-top: 10%;
+    margin-right:10%;
+    margin-left: 6%;
+}
+.contact-in-leftbox-box1-iconbox{
+    width: 15%;
+    height: 100%;
+    /* border: 2px solid green; */
+    text-align: center;
+}
+.contact-in-leftbox-box1-iconbox-circleback{
+    width: 85%;
+    height: 75%;
+    /* border: 2px solid orange; */
+    border-radius: 100%;
+    background-color:rgb(219, 213, 213);
+    margin-left: 10%;
+}
+.contact-in-leftbox-box1-iconbox-circleback i{
+    font-size: 20px;
+    color: rgba(20,157,221,1);
+    margin-top: 25%;
+}
+.contact-in-leftbox-box1-textbox{
+    width: 70%;
+    height: 100%;
+    /* border: 2px solid black; */
+    margin-left: 4%;
+    line-height: 4vh;
+}
+.contact-in-leftbox-box1-textbox h1{
+    font-size: 18px;
+}
+.contact-in-leftbox-box1-textbox p{
+    font-size: 12px;
+}
+.map-box{
+    width: 90%;
+    height: 40%;
+    /* border:2px solid red; */
+    margin-top: 8%;
+    margin-left: 5%;
+}
+/* ---------left-box---------- */
+
+.contact-in-rightbox{
+    width: 60%;
+    height: 100%;
+    border: 1px solid grey;
+}
+.contact-in-rightbox-box2{
+    width: 100%;
+    height: 13%;
+    /* border: 2px solid red; */
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact-in-rightbox-box2-namebox{
+    width: 45%;
+    height: 100%;
+    /* border: 2px solid green; */
+    margin-left: 2%;
+}
+.contact-in-rightbox-box2-namebox input{
+    width:97%;
+    height: 60%;
+    margin-top: 3%;
+}
+/* .contact-in-rightbox-box2-emailbox{
+    width: 50%;
+    height: 100%;
+    border: 2px solid purple;
+} */
+.contact-in-rightbox-box2-emailbox{
+    width: 45%;
+    height: 100%;
+    /* border: 2px solid purple; */
+}
+.contact-in-rightbox-box2-emailbox input{
+    width:97%;
+    height: 60%;
+    margin-top: 3%;
+}
+.contact-in-rightbox-box3{
+    width: 100%;
+    height: 15%;
+    /* border: 2px solid yellow; */
+    margin-top: 4%;
+    padding-left:5% ;
+}
+.contact-in-rightbox-box3 input{
+    width:96%;
+    height: 60%;
+    margin-top: 2%;
+}
+/* -----box3-------*/
+.contact-in-rightbox-box4{
+    width: 100%;
+    height: 40%;
+    /* border: 2px solid red; */
+    margin-top: 4%;
+    padding-left:5% ;
+}
+.contact-in-rightbox-box4 textarea{
+    width: 96%;
+    height: 80%;
+    margin-top: 2%;
+}
+/* button */
+.snd-msg-btn{
+    font-size: 15px;
+    margin:2% 0% 0% 38%;
+    padding: 2% 4% 2% 4%;
+    border-radius:21px;
+    background-color: rgba(20,157,221,1);
+    color: white;
+    border: none;
+}
+/*---------------contact box----------- */
+
+/*---------------footer box----------- */
+.footer{
+    width: 100%;
+    height: 2%;
+    border-top: 1px solid grey;
+    /* margin-top: 4%; */
+    text-align: center;
+    line-height: 4vh;
+    padding-top: 3%;
+}
+.footer h1{
+    font-size:17px;
+}
+.footer p{
+    font-size:15px;
+}
+/*---------------footer box----------- */

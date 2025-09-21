@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            margin:auto;
+            /* transition properties */
+            /* 1) */
+            transition-property: background-color;
+
+            /* 2) duration[how fast or slow] */
+            transition-duration:5s;
+
+            /* 3) transition-timing-function*/
+            /* transition-timing-function:linear; */
+            /* 1) linear:-[specifies a transition effect with the same speed from start to end] */
+
+            /* transition-timing-function:ease; */
+            /* 2) */
+            /* transition-timing-function:ease-in; */
+
+            /* 3) */
+            /* transition-timing-function:ease-out; */
+
+            /* 4) */
+            /* transition-timing-function:ease-in-out; */
+
+            /* delay duration*/
+            /* transition-delay:1s; */
+
+            /* all property in single line */
+            transition:background-color 5s linear 1s;
+            /* all property in single line */
+            /* transition properties */
+        }
+        /* 1) step */
+        .box:hover{
+            background-color: red;
+            color: blue;
+        }
+        /* 1) step*/
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="box">
+        <p>hello</p>
+    </div>
+</body>
+</html>

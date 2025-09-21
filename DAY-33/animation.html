@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        /* simple css animation(color change) */
+        .box1{
+            width:100px;
+            height: 100px;
+            background-color: red;
+            animation-name: changeColor;
+            animation-duration:2s;
+            animation-timing-function:linear;
+            animation-delay: 3s;
+            animation-iteration-count:infinite;
+            /* animation-direction: alternate;
+            animation-fill-mode: forwards;
+            animation-fill-mode:backwards;
+            animation:changeColor 2s infinite alternate */
+        }
+        @keyframes changeColor{
+            0%{background-color:red;}
+            50%{
+                background-color:green;
+            }
+            100%{background-color:blue}
+        }
+
+        /*------ Moving on object(translate)-----*/
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            position: relative;
+            animation: moveRight 3s infinite alternate;
+        }
+        @keyframes moveRight{
+            0%{
+                left:0px;
+                background-color: green;
+            }
+            100%{
+                left:200px;
+                background-color: red;
+            }
+        }
+
+        /*---- rotating an element ----*/
+        .box3{
+            width: 100px;
+            height: 100px;
+            background-color: purple;
+            animation:rotateBox 2s linear infinite;
+        }
+        @keyframes rotateBox{
+            0%{ transform:rotate(0deg);}
+            100%{transform: rotate(360deg);}
+        }
+
+
+        /* ----bouncing ball animation */
+        .ball{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border-radius:50%;
+            position:absolute;
+            bottom:0;
+            animation:bounce 1s infinite ease-in-out;
+        }
+        @keyframes bounce{
+            0%{transform:translateY(0);}
+            50%{transform:translateY(-150px);}
+            100%{transform:translateY(0);}
+        }
+
+        /* ----smooth text fade-in Animation---- */
+        .text{
+            font-size: 24px;
+            opacity: 0;
+            animation:fadeIn 3s forwards;
+            /* color: red; */
+        }
+        @keyframes fadeIn{
+            0%{opacity:0;}
+            100%{opacity:1;}
+        }
+
+
+        /* -----hover animation button effect */
+        .btn{
+            padding: 15px 30px;
+            font-size: 18px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor:pointer;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .btn:hover{
+            background-color: green;
+            transform:scale(1.2);
+        }
+    </style>
+</head>
+<body style="background-color: black;">
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="ball"></div>
+    <h1 class="text">Welcome to CSS Animation!</h1>
+    <button class="btn">Hover Me</button>
+</body>
+</html>

@@ -1,0 +1,109 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    /* border:2px solid red; */
+}
+.header{
+    width: 100%;
+    height: 20%;
+    /* border:2px solid red; */
+    background-color:rgb(13, 127, 172);
+}
+.form{
+    width: 70%;
+    height: 80%;
+    border:1px solid grey;
+    margin: auto;
+    margin-top:-4%;
+    background-color :white;
+}
+.form h1{
+    padding-top:4%;
+    padding-bottom:2% ;
+    font-family: arial;
+    text-align: center;
+}
+.form p{
+    text-align: center;
+}
+.in-box1{
+    width: 98%;
+    height: 69%;
+    /* border:2px solid black; */
+    margin: auto;
+    margin-top: 4%;
+}
+.in-box2{
+    width: 100%;
+    height:25%;
+    /* border:2px solid red solid red; */
+    display: flex;
+}
+.left-box{
+    width: 50%;
+    height: 100%;
+    /* border:2px solid red solid blue; */
+}
+.left-box input{
+    margin-top: 1vh;
+    padding: 2% 59% 2% 2%;
+}
+.right-box{
+    width: 50%;
+    height: 100%;
+    /* border:2px solid red solid blue; */
+}
+.right-box input{
+    margin-top: 1vh;
+    padding: 2% 59% 2% 2%;
+}
+.in-box3{
+    width: 100%;
+    height:25%;
+    /* border:2px solid red solid red; */
+    display: flex;
+}
+.left-box2{
+    width: 50%;
+    height: 100%;
+}
+.left-box2 input{
+    margin-top: 1vh;
+    padding: 2% 59% 2% 2%;
+}
+.right-box2{
+    width: 50%;
+    height: 100%;
+    /* border:2px solid red solid blue; */
+}
+.right-box2 input{
+    margin-top: 1vh;
+    padding: 2% 59% 2% 2%;
+}
+.label{
+    text-align: left;
+}
+.btn{
+    background-color: rgb(13, 127, 172);
+    color: white;
+    padding: 1% 48% 1% 45%;
+    margin-left: 1%;
+    margin-top: 4%;
+    border: none;
+}
+.footer{
+    width: 100%;
+    height: 10%;
+    /* border:2px solid red; */
+    padding-left:44%;
+    padding-top:1%;
+}
+.footer i{
+    color:rgb(13, 127, 172);
+    padding-right:6%;
+}

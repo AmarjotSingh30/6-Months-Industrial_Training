@@ -1,0 +1,85 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height:100vh;
+    border: 2px solid black;
+    margin: auto;
+}
+.header{
+    width: 100%;
+    height: 10%;
+    border: 4px solid red;
+    display: flex;
+}
+.header-left{
+    width: 70%;
+    height: 100%;
+    border: 2px solid blue;
+}
+.header-right{
+    width: 30%;
+    height: 100%;
+    border:2px solid orange;
+}
+.navbar{
+    width: 100%;
+    height: 10%;
+    border: 2px solid black;
+    display: flex;
+}
+.navbar-left{
+    width: 80%;
+    height: 100%;
+    border: 2px solid green;
+}
+.navbar-right{
+    width: 20%;
+    height: 100%;
+    border: 2px solid purple;
+}
+.content{
+    width: 100%;
+    height:50%;
+    border: 4px dotted red;
+    background-image: url(images/school.jpg);;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.box1{
+    width: 50%;
+    height:20%;
+    border: 2px solid blue;
+}
+.box2{
+    width: 50%;
+    height:20%;
+    border: 2px solid blue;
+}
+.box3{
+    width: 50%;
+    height:20%;
+    border: 2px solid blue;
+}
+.box4{
+    width: 70%;
+    height:50%;
+    border: 5px solid purple;
+    margin: 6% 20% 0% 20%;
+    display: flex;
+}
+.leftbox{
+    width: 50%;
+    height: 100%;
+    border: 2px solid orange;
+}
+.rightbox{
+    width: 50%;
+    height: 100%;
+    border: 2px solid red;
+}
+

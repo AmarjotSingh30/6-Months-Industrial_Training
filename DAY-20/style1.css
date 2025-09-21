@@ -1,0 +1,112 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+    border: 2px solid red;
+    background-color: skyblue;
+    padding:4% 0% 0% 0% ;
+}
+.box1{
+    width: 90%;
+    height: 30%;
+    margin: auto;
+    /* border:2px solid black; */
+    display:flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.left-box{
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid red; */
+    background-color: white;
+    line-height: 4vh;
+}
+.left-box i{
+    font-size: 40px;
+    color: skyblue;
+    margin: 8% 0% 6% 0%;
+}
+.left-box h1{
+    font-size: 15px;
+    padding: 0% 0% 4% 0%;
+}
+.box2{
+    width: 90%;
+    height: 70%;
+    /* border: 4px solid orange; */
+    margin: auto;
+    display: flex;
+}
+.left-box1{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid green; */
+}
+.in-box1{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid black; */
+    padding: 4% 0% 0% 0%;
+}
+.in-box1 h1{
+    margin: 0% 0% 4% 10%;
+    color: white;
+}
+.in-box1 p{
+    color: white;
+    margin: 0% 0% 0% 10%;
+}
+.in-box2{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid black; */
+}
+.in-box2 img{
+    width: 25%;
+    height: 70%;
+    /* border: 2px solid purple; */
+    border-radius:60% ;
+    margin: 2% 0% 0% 10%;
+}
+.right-box1{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid purple; */
+    padding: 3% 0% 0% 3%;
+}
+.right-box1 input{
+    background-color: skyblue;
+    border-bottom: 2px solid white;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    padding: 0% 50% 1% 2%;
+    margin: 1% 0% 4% 0%;
+    outline: none;
+}
+.right-box1 textarea{
+    background-color: skyblue;
+     border-bottom: 2px solid white;
+    border-top:none;
+    border-right:none;
+    border-left:none;
+    padding: 2% 0% 0% 2%;
+    margin: 0% 0% 2% 0%;
+}
+.right-box1 button{
+    padding: 1% 36% 1% 40%;
+    border: none;
+}
+/* pseudo elements */
+
+input::placeholder{
+    color: white;
+}
+label{
+    color: white;
+}
