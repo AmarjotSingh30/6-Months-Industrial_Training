@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript (1st day)</title>
+</head>
+<body>
+    <script>
+        //document.write("Hello World<br>");
+        document.write("Scripting Language<br>");
+        /*document.write("Javascript<br>");
+        document.write("Front End<br>");*/
+        document.write("Addition: "+(89+89)+"<br>");
+
+        var num=89;
+        document.write(num+"<br>");
+
+        var x=10,y=3;
+        // Operators
+        // 1)Arithmetic Operators(+,-,*,/,%)
+        document.write("Add: "+(x+y)+"<br>");
+        document.write("Sub: "+(x-y)+"<br>");
+        document.write("Product: "+(x*y)+"<br>");
+        document.write("Divide: "+(x/y)+"<br>");
+        document.write("Modulus: "+(x%y )+"<br>");
+
+        // 2)Comparison Operators(<,>,<=,>=,==,!=)
+        // OUTPUT: true/false
+        document.write("is x (lesser(<)) than y:"+(x<y)+"<br>");
+        document.write("is x (greater(>)) than y:"+(x>y)+"<br>");
+        document.write("is x (lesser than equal to(<=)) than y:"+(x<=y)+"<br>");
+        document.write("is x (greater than equal to(>=)) than y:"+(x>=y)+"<br>");
+        document.write("is x ( equal to(==)) than y:"+(x==y)+"<br>");
+        document.write("is x (not equal to(!=)) than y:"+(x!=y)+"<br>");
+
+
+        // 3)Logical Operators(&&,||,!)
+        // &&- Logical AND (All True)
+        // ||- Logical OR (Atleast one condition must be true)
+        // ! - Logical NOT (true => false, false => true)
+        document.write(((x > y) && (x == 10) && (y < 5))+"<br>");
+        document.write(((x > y) || (x == 8) || (y > 5))+"<br>");
+        document.write(!(x > y)+"<br>");
+
+        // 4)Increment(++) and Decrement(--) Operators
+        x++;
+        document.write("value of X after ++: "+x+"<br>");
+        y--;
+        document.write("value of Y after --: "+y+"<br>"); 
+
+        // 5)Assignment Operators(=,+=,-=,*=,/=,==,!=)
+        document.write("value of X: "+x+" and Y: "+y+"<br>"); 
+        x+=y;
+        document.write("value of X after(x+=y): "+x+" and Y: "+y+"<br>"); 
+        x-=y;
+        document.write("value of X after(x-=y): "+x+" and Y: "+y+"<br>"); 
+        x*=y;
+        document.write("value of X after(x*=y): "+x+" and Y: "+y+"<br>"); 
+        x/=y;
+        document.write("value of X after(x/=y): "+x+" and Y: "+y+"<br>"); 
+        x%=y;
+        document.write("value of X after(x%=y): "+x+" and Y: "+y+"<br>"); 
+
+    </script>
+</body>
+</html>

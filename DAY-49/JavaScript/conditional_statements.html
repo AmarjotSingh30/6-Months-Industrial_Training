@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript (1st day)Conditional Statements</title>
+</head>
+<body>
+    <script>
+        // 1)if Statement
+        var num=78,day=1,num2=87,num3=34;
+        if(num < 93){
+            document.write("Smaller<br>");
+        }
+
+        // 2)if else Statement
+        if(num < 93){
+            document.write("Smaller<br>");
+        }else{
+            document.write("Greater<br>");
+        }
+
+        // 3)if-else if-else Statement
+        if(day == 1 || day == 2 || day == 3 || day == 4 || day == 5){
+            document.write("Weekday<br>");
+        }else if(day == 6){
+            document.write("Saturday<br>");
+        }else if(day == 7){
+            document.write("Sunday<br>");
+        }else{
+            document.write("Invalid data<br>");
+        }
+
+        // 4)Nested if-else Statement
+        if(num > num2){
+            if(num > num3){
+                document.write("NUM is Greatest<br>");
+            }else{
+                document.write("NUM3 is Greatest<br>");
+            }
+        }else{
+            if(num2 > num3){
+                document.write("NUM2 is Greatest<br>");
+            }else{
+                document.write("NUM3 is Greatest<br>");
+            }  
+        }
+
+        // 5)Switch Case Statement
+        switch(day){
+            case 1: 
+                document.write("Monday<br>");
+                break;
+            case 2: 
+                document.write("Tuesday<br>");
+                break;
+            case 3: 
+                document.write("Wednesday<br>");
+                break;
+            case 4: 
+                document.write("Thursday<br>");
+                break;
+            case 5: 
+                document.write("Friday<br>");
+                break;
+            case 6: 
+                document.write("Saturday<br>");
+                break;
+            case 7: 
+                document.write("Sunday<br>");
+                break;
+            default:
+                document.write("Invalid data<br>");
+                break;
+        }
+
+        // Buit-in Methods
+        // TAKING USER INPUT+ SETTING IT TO INTEGER
+        // var x=parseInt(prompt("Enter any number: "));
+        // var y=parseInt(prompt("Enter any number: "));        
+        // document.write("ADD: "+(x+y)+"<br>");
+
+        // ALERT MESSAGE
+        // alert("ADD: "+(x+y))
+
+        //  PRINTING IN CONSOLE (HELPFUL FOR DEBUGGING)
+        // PRINTING IN CONSOLE
+        console.log("Hello World");
+        // ERROR IN CONSOLE
+        console.error("Hello World");
+        // WARNING IN CONSOLE
+        console.warn("Hello World");
+
+        // CONFIRMATION BOX WITH YES OR NO
+        // var cnfrm=confirm("Do you want to delete it");
+        // if(cnfrm){
+        //     console.log("You Pressed OK");
+        // }else{
+        //     console.log("You Cancelled");
+        // }
+
+        // Task: grading system
+        // eng=parseInt(prompt("enter English marks: "));
+        // math=parseInt(prompt("enter Math marks: "));
+        // sci=parseInt(prompt("enter Science marks: "));
+        // hin=parseInt(prompt("enter Hindi marks: "));
+        // pun=parseInt(prompt("enter Punjabi marks: "));
+        // total=eng+math+sci+hin+pun;
+        // document.write("total is :"+total+"<br>");
+        // avg=total/5;
+        // document.write("AVERAGE are: "+avg+"<br>");
+
+        // // if else
+        // if(avg>=90){
+        //     document.write("Grade A");
+        //     }
+        // else if(avg>=80){
+        //     document.write("Grade B")
+        // }
+
+        // else if(avg>=70){
+        //     document.write("Grade c")
+        // }
+
+        // else if(avg>=60){
+        //     document.write("Grade d")
+        // }
+
+        // else if(avg>=50){
+        //     document.write("Grade f")
+        // }
+        // else{
+        //     document.write("invalid data")
+        // }
+
+        // task find the smallest in 4 numbers
+        cont1=10;
+        document.write("value of num1: "+cont1+"<br>")
+        cont2=5;
+        document.write("value of num2: "+cont2+"<br>")
+        cont3=2;
+        document.write("value of num3: "+cont3+"<br>")
+        cont4=1;
+        document.write("value of num4: "+cont4+"<br>")
+
+        // 1)trying with nested if else statement
+        // if(cont1<cont2){
+        //     if(cont1<cont3){
+        //         if(cont1<cont4){
+        //             document.write("cont1 is smallest");
+        //         }else{
+        //             document.write("cont4 is smallest")
+        //         }
+        //     }
+        // }
+        // else{
+        //     if(cont2<cont3){
+        //         if(cont2<cont4){
+        //             document.write("cont2 is smallest");
+        //         }else{
+        //             document.write("cont3 is smallest")
+        //         }
+        //     }
+        // }
+        // trying with nested if else statement
+
+        //2)trying with if elseif statement
+        // for checking num1
+        if(cont1 < cont2 || cont1  < cont3 || cont1 < cont4){
+            document.write("cont1 is smaller");
+        }else if(cont2 < cont3 || cont2 < cont4){
+            document.write("cont2 is smaller")
+        }else if(cont3 < cont4){
+            document.write("cont3 is smaller");
+        }else{
+            document.write("cont4 is smaller<br>");
+        }
+        // trying with if elseif statement
+
+        // to find even numbers
+        even_val=parseInt(prompt("enter the value to find its even or not"));
+        document.write("given value: "+even_val+"<br>")
+
+        if (even_val%2==0){
+            document.write("its an even value")
+        }
+        else{
+            document.write("its not even value")
+        }
+
+
+    </script>
+</body>
+</html>
