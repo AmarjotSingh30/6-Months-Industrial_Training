@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mouse Events</title>
+</head>
+<body>
+    <div id="box" class="test">
+        <h1>Text Box</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas nisi ratione illum. A recusandae exercitationem perspiciatis nesciunt. Accusantium laboriosam quidem repudiandae fugit similique, officiis, quisquam itaque, voluptatum beatae explicabo dolorem.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        // click(),dblclick(),contextmenu(),mouseenter(),mouseleave()
+        $(document).ready(function(){
+            // click()
+            $('#box').click(function(){
+                $('#box').css('background-color','green');
+            });
+            // dblclick()
+            $('#box').dblclick(function(){
+                $('#box').css('background-color','orange');
+            });
+             // contextmenu()-activate when pressing 2nd mouse button)
+            $('#box').contextmenu(function(){
+                $('#box').css('background-color','blue');
+            });
+             // mousecenter()-when mouse hover over the element
+            $('#box').mouseenter(function(){
+                $('#box').css('background-color','yellow');
+            });
+            // mousecenter() -when mouse leaves
+            $('#box').mouseleave(function(){
+                $('#box').css('background-color','red');
+            });
+        });
+    </script>
+</body>
+</html>

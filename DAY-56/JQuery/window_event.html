@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>window event</title>
+    <style>
+        .test{
+            width: 60%;
+            height: 40vh;
+            margin: auto;
+            border: 2px solid red;
+            padding: 2%;
+            font-size:20px;
+            overflow: scroll;
+        }
+        .para{
+            width: 60%;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="box" class="test">
+        <h1>text box</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea alias, rerum nesciunt aperiam voluptas voluptates nisi vitae doloremque consequuntur soluta fugiat ipsum quo possimus ipsam pariatur harum id hic magni!
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea alias, rerum nesciunt aperiam voluptas voluptates nisi vitae doloremque consequuntur soluta fugiat ipsum quo possimus ipsam pariatur harum id hic magni!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea alias, rerum nesciunt aperiam voluptas voluptates nisi vitae doloremque consequuntur soluta fugiat ipsum quo possimus ipsam pariatur harum id hic magni!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea alias, rerum nesciunt aperiam voluptas voluptates nisi vitae doloremque consequuntur soluta fugiat ipsum quo possimus ipsam pariatur harum id hic magni!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea alias, rerum nesciunt aperiam voluptas voluptates nisi vitae doloremque consequuntur soluta fugiat ipsum quo possimus ipsam pariatur harum id hic magni!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea alias, rerum nesciunt aperiam voluptas voluptates nisi vitae doloremque consequuntur soluta fugiat ipsum quo possimus ipsam pariatur harum id hic magni!Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea alias, rerum nesciunt aperiam voluptas voluptates nisi vitae doloremque consequuntur soluta fugiat ipsum quo possimus ipsam pariatur harum id hic magni!
+        </p>
+    </div>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit blanditiis, quae rem iste sequi enim nam illo, fugiat quibusdam doloribus velit aut amet corporis? Eius quidem doloremque temporaLorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit blanditiis, quae rem iste sequi enim nam illo, fugiat quibusdam doloribus velit aut amet corporis? Eius quidem doloremque temporaLorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit blanditiis, quae rem iste sequi enim nam illo, fugiat quibusdam doloribus velit aut amet corporis? Eius quidem doloremque temporaLorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit blanditiis, quae rem iste sequi enim nam illo, fugiat quibusdam doloribus velit aut amet corporis? Eius quidem doloremque temporaLorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit blanditiis, quae rem iste sequi enim nam illo, fugiat quibusdam doloribus velit aut amet corporis? Eius quidem doloremque temporaLorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit blanditiis, quae rem iste sequi enim nam illo, fugiat quibusdam doloribus velit aut amet corporis? Eius quidem doloremque temporaLorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit blanditiis, quae rem iste sequi enim nam illo, fugiat quibusdam doloribus velit aut amet corporis? Eius quidem doloremque temporaLorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit blanditiis, quae rem iste sequi enim nam illo, fugiat quibusdam doloribus velit aut amet corporis? Eius quidem doloremque temporaLorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit blanditiis, quae rem iste sequi enim nam illo, fugiat quibusdam doloribus velit aut amet corporis? Eius quidem doloremque temporaLorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit blanditiis, quae rem iste sequi enim nam illo, fugiat quibusdam doloribus velit aut amet corporis? Eius quidem doloremque temporaLorem ipsum dolor sit amet consectetur adipisicing elit. Error, odit blanditiis, quae rem iste sequi enim nam illo, fugiat quibusdam doloribus velit aut amet corporis? Eius quidem doloremque tempora</p>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+             $(document).ready(function(){
+                // apply color to body when window is resized
+                $(window).resize(function(){
+                    $('body').css('color','green');
+                });
+
+                // apply color to body when window is scrolled
+                 $(window).scroll(function(){
+                    $('body').css('color','blue');
+                });
+             });
+        </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive design </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main">
+        <!-- header-box1 -->
+        <div class="header-box1">
+            <div class="header-box1-inbox1">
+                <h1>Dispatch Master</h1>
+            </div>
+            <div class="header-box1-inbox2">
+                <div class="links">
+                    <a href="#">home</a>
+                    <a href="#">home</a>
+                    <a href="#">home</a>
+                    <a href="#">home</a>
+                </div>
+                <div class="hamburger">
+                <i class="fa-solid fa-bars"></i>
+                </div>
+                <!-- <ul>
+                    <li>Home</li>
+                    <li>About Us</li>
+                    <li>Services</li>
+                    <li>Gallery</li>
+                    <li>Contact</li>
+                </ul> -->
+                <!-- jquery toggle -->
+                 <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+                    <script>
+                            $(document).ready(function(){
+                                // toggle btn
+                                $('.hamburger').click(function(){
+                                    $('.links').toggle(1000);
+                                });
+                            });
+                    </script>
+                 <!-- jquery toggle -->
+            </div>
+        </div>
+        <!-- header-box1 -->
+         <!-- box2 -->
+          <div class="header-box2">
+            <h1>Fast & Reliable Dispatch Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <button class="btn">Get started</button>
+          </div>
+          <!-- box2 -->
+           <!-- box3 -->
+            <div class="header-box3">
+                <h1>About Us</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur?</p>
+            </div>
+           <!-- box3 -->
+    </div>
+</body>
+</html>

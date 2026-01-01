@@ -1,0 +1,86 @@
+/* responsiveness */
+@media (max-width:579px){
+    .links a{
+        display: none;
+    }
+    .img-box1{
+        height:10%;
+    }
+    .project-box{
+        height: 50%;
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+    .project-box-inbox1{
+        /* border: 2px solid yellow; */
+        height: 3%;
+        padding-left: 6%;
+    }
+    .project-box-inbox2{
+        height: 70%;
+        /* border: 5px solid black; */
+    }
+    .project-box-inbox2-dinbox1{
+        height: 90%;
+        /* border: 2px solid red; */
+        flex-direction: column;
+    }
+    .project-box-inbox2-dinbox1-imgbox{
+        width: 90%;
+        height: 100%;
+        /* border: 2px solid purple; */
+        margin-top: 4%;
+        margin-left: 4%;
+    }
+    .project-box-inbox2-dinbox2{
+        height: 90%;
+        /* border: 2px solid red; */
+        flex-direction: column;
+    }
+    .project-box-inbox2-dinbox2-imgbox{
+        width: 90%;
+        height: 100%;
+        /* border: 2px solid purple; */
+        margin-top: 4%;
+        margin-left: 4%;
+    }
+    .about-us-project-box{
+        /* border: 5px solid red; */
+        margin-top: 120%;
+    }
+    .about-us-project-box-inbox1 h4{
+        padding-left: 8%;
+    }
+    .about-us-project-box-inbox2 p{
+        text-align: left;
+        padding:0% 8% 0% 8%;
+    }
+    .about-us-project-box-inbox3{
+        /* border: 5px solid black; */
+        margin-top: 15%;
+        flex-direction: column;
+    }
+    .about-us-project-box-inbox3-dbox1{
+        width: 75%;
+        /* border: 2px solid yellow; */
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+    .contact-project-box{
+        /* border: 5px solid red; */
+        margin-top: 250%;
+    }
+    .contact-project-box-inbox1 h4{
+        padding-left: 10%;
+    }
+    .inputs{
+        /* border: 2px solid red; */
+        margin-left: 10%;
+    }
+    .last-img-box{
+        width: 90%;
+        margin-left: 4%;
+        /* border: 2px solid red; */
+    }
+}
+/* responsiveness */

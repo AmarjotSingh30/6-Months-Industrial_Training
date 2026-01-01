@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GET ELEMENT tasks</title>
+</head>
+<body>
+    <form>
+        <!-- //task1 print table with input fields// -->
+        <!-- <input type="text" placeholder="Enter the  table value" id="number1" name="number1">
+        <input type="text" placeholder="till" id="number2" name="number1">
+        <input type="button" value="print table" onclick="table()"> -->
+    </form>
+    <h1>Multiplication Table Generator</h1>
+    <label for="number">Enter a number:</label>
+    <input type="number" id="number" min="1" placeholder="Enter a number"></input>
+    <label for="limit">Enter the limit:</label>
+    <input type="number" id="limit" min="1" placeholder="Enter limit"></input>
+    <button onclick="generateTable()">Generate Table</button>
+    <div id="tablecontainer"></div>
+    <script>
+        // function table(){
+        //     var num1 = document.getElementById("number1").value;
+        //     var num2 = document.getElementById("number2").value;
+        //     for(var i=1;i<=num2;i++){
+        //         document.write((i*num1)+"<br>")
+        //     }
+        // }
+        function generateTable(){
+            // get user input
+            const number = parseInt(document.getElementById('number').value);
+            const limit = parseInt(document.getElementById('limit').value);
+
+            // validate the inputs
+            if(isNaN(number)|| number < 1 || isNaN(limit)||limit < 1){
+                alert('Please enter the valid numbers greater than or equal to 1.');
+                return;
+            }
+            // generate the multiplication table
+            let tableHTML = '<table><tr><th>Multiplier</th><th>Result</th></tr>';
+                for(let i = 1; i <= limit; i++){
+                    tableHTML+=`<tr><td>${number} x ${i}</td><td>${number*i}</td></tr>`;
+                }
+                tableHTML+='</table>';
+
+                // display the table;
+                document.getElementById('tablecontainer').innerHTML = tableHTML;
+
+        }
+    </script>
+    <!-- //task1 print table with input fields// -->
+</body>
+</html>

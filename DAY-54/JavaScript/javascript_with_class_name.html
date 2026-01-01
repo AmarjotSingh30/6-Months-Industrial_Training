@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javscript with class name</title>
+</head>
+<body>
+    <div class="class">
+        this is a simple class implementation
+    </div>
+    <script>
+        var x=document.getElementsByClassName('class');
+        document.write("on calling x, it will return array like object:<br>"+x)
+    </script>
+
+    <div class="example">Element1</div>
+    <div class="example">Element2</div>
+    <script>
+        const collection = document.getElementsByClassName('example');
+        collection[1].innerHTML = "hello world";
+    </script>
+
+</body>
+</html>

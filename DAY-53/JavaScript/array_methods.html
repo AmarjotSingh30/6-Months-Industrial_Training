@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <script>
+        var fruits=['apple','kiwi','pineapple','banana'];
+        document.write(fruits[2]+"<br>");
+        // modfiying or updation
+        fruits[1]='mango';
+        for( var i=0;i<fruits.length;i++){
+            document.write(fruits[i]+"<br>")
+        }
+
+        // Array Methods
+        // 1) indexOf - checking index of given value
+        document.write(fruits.indexOf('pineapple')+"<br>");
+        // 2) includes - checking if value exist or not 
+        document.write(fruits.includes('pineapple')+"<br>");
+        document.write("<br>----------------------<br>")
+
+        // 3) Push method(add elements in the end of the array)
+        fruits.push('strawberry','cherry');
+        for( var i=0;i<fruits.length;i++){
+            document.write(fruits[i]+"<br>")
+        }
+         document.write("<br>----------------------<br>")
+
+        //4) pop method(to delete last element of the array)
+        fruits.pop();
+        for( var i=0;i<fruits.length;i++){
+            document.write(fruits[i]+"<br>")
+        }
+         document.write("<br>----------------------<br>")
+
+        //  5)shift method()
+        fruits.shift();
+        for( var i=0;i<fruits.length;i++){
+            document.write(fruits[i]+"<br>")
+        }
+         document.write("<br>----------------------<br>")
+
+         // 6)unshift method()
+        fruits.unshift("pomegrante","orange");
+        for( var i=0;i<fruits.length;i++){
+            document.write(fruits[i]+"<br>")
+        }
+         document.write("<br>----------------------<br>")
+
+         // 7)sort method()
+        fruits.sort();
+        for( var i=0;i<fruits.length;i++){
+            document.write(fruits[i]+"<br>")
+        }
+         document.write("<br>----------------------<br>")
+
+        // implementing all methods
+        var num=['1','2','3','4','5'];
+        document.write(num[2]+"<br>");
+        document.write("<br>----------------------<br>")
+        num.push('6','7','8');
+        for(var x=0;x<num.length;x++){
+            document.write(num[x]+"<br>");
+        }
+        document.write("<br>----------------------<br>")
+        num.shift();
+        for(var x=0;x<num.length;x++){
+            document.write(num[x]+"<br>");
+        }
+        document.write("<br>----------------------<br>")
+
+        num.sort();
+        for(var x=0;x<num.length;x++){
+            document.write(num[x]+"<br>");
+        }
+        document.write("<br>----------------------<br>")
+    </script>
+    
+</body>
+</html>

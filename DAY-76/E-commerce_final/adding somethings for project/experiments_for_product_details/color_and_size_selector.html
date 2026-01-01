@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>color and size selector</title>
+    <style>
+.product-options {
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  border: 2px solid black;
+}
+
+.color-options, .size-options {
+  margin-bottom: 20px;
+  border: 2px solid red;
+}
+
+.colors, .sizes {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.color {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: 0.3s;
+}
+
+.color:hover {
+  transform: scale(1.1);
+}
+
+.color.active {
+  border: 2px solid white;
+}
+
+.size {
+  border: 1px solid #ccc;
+  padding: 5px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.size:hover {
+  background-color: #f2f2f2;
+}
+
+.size.active {
+  background-color: #71cd14;
+  color: white;
+  border-color: #71cd14;
+}
+
+/* quantity selector */
+.shop_cart_content-box-inbox1-dbox2-quantity {
+    width: 22%;
+    height: 100%;
+    border: 2px solid purple;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 6px;
+    font-size: 18px;
+    user-select: none;
+    margin-left: 40%;
+}
+
+.qty-btn {
+    border: none;
+    background: red;
+    border: 2px solid black;
+    color: white;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: .2s;
+}
+
+.qty-btn:hover {
+    opacity: 0.8;
+}
+
+/* quantity selector */
+    </style>
+</head>
+<body>
+    <div class="product-options">
+  <!-- Color Selector -->
+  <div class="color-options">
+    <h4>Choose Color:</h4>
+    <div class="colors">
+      <span class="color" data-color="Red" style="background:red;"></span>
+      <span class="color" data-color="Blue" style="background:blue;"></span>
+      <span class="color" data-color="Black" style="background:black;"></span>
+      <span class="color" data-color="Green" style="background:green;"></span>
+    </div>
+    <p id="selectedColor">Selected: None</p>
+  </div>
+
+  <!-- Size Selector -->
+  <div class="size-options">
+    <h4>Choose Size:</h4>
+    <div class="sizes">
+      <span class="size">S</span>
+      <span class="size">M</span>
+      <span class="size">L</span>
+      <span class="size">XL</span>
+    </div>
+    <p id="selectedSize">Selected: None</p>
+  </div>
+</div>
+<!-- quantity selector -->
+<div class="shop_cart_content-box-inbox1-dbox2-quantity">
+    <button class="qty-btn" id="minus">-</button>
+    <span id="quantity">1</span>
+    <button class="qty-btn" id="plus">+</button>
+</div>
+<h1>bye</h1>
+<!-- quantity selector -->
+
+<script>
+const colors = document.querySelectorAll(".color");
+const sizes = document.querySelectorAll(".size");
+const selectedColor = document.getElementById("selectedColor");
+const selectedSize = document.getElementById("selectedSize");
+
+// Color selection
+colors.forEach(c => {
+  c.addEventListener("click", () => {
+    colors.forEach(col => col.classList.remove("active"));
+    c.classList.add("active");
+    selectedColor.textContent = "Selected: " + c.dataset.color;
+  });
+});
+
+// Size selection
+sizes.forEach(s => {
+  s.addEventListener("click", () => {
+    sizes.forEach(size => size.classList.remove("active"));
+    s.classList.add("active");
+    selectedSize.textContent = "Selected: " + s.textContent;
+  });
+});
+
+
+// quantity selector
+
+let qty = 1;
+const quantitySpan = document.getElementById("quantity");
+
+document.getElementById("plus").addEventListener("click", () => {
+    qty++;
+    quantitySpan.innerText = qty;
+});
+
+document.getElementById("minus").addEventListener("click", () => {
+    if(qty > 1){
+        qty--;
+        quantitySpan.innerText = qty;
+    }
+});
+// quantity selector
+</script>
+</body>
+</html>

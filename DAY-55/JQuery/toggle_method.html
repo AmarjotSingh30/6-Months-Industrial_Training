@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle methods</title>
+</head>
+<body>
+    <div id="box">
+        <h2>Text Box</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate in obcaecati cum adipisci nulla! Quam fuga impedit placeat nobis voluptatum consequatur, corporis magni, alias non nam cum iure rerum.</p>
+    </div>
+    <button id="togglebtn">Toggle</button>
+    <button id="hidebtn">Hide</button>
+    <button id="showbtn">Show</button>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function(){
+            // hidebtn
+            $('#hidebtn').click(function(){
+                $('#box').hide("slow");
+            });
+
+            // showbtn
+            $('#showbtn').click(function(){
+                $('#box').show("fast");
+            });
+
+             // hide paragraph
+            $('#hidebtn').click(function(){
+                $('#box p').hide();
+            });
+
+             // show paragraph
+            $('#showbtn').click(function(){
+                $('#box p').show();
+            });
+
+             // console printing
+            $('#hidebtn').click(function(){
+                $('#box').hide(3000,function(){
+                    console.log("now it is hidden")
+                });
+            });
+
+            // toggle btn
+            $('#togglebtn').click(function(){
+                $('#box').toggle(1000);
+            });
+        });
+    </script>
+
+</body>
+</html>

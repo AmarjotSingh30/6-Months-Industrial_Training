@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nested loops</title>
+</head>
+<body>
+    <script>
+        // ----nested for loop---
+        document.write("nested for loop<br>");
+        var i,j;
+        for(i=1;i<=5;i++){
+            for(j=1;j<=5;j++){
+                document.write(" * ");
+            }
+            document.write("<br>");
+        }
+        document.write("<br>----------------------------<br>");
+
+        // ----nested do while loop----
+        document.write("nested do while loop<br>");
+        i=1;
+        do{
+            j=1;
+            do{
+                document.write(" * ");
+                j++;
+            }while(j<=5);
+            document.write("<br>");
+            i++;
+        }while(i<=5);
+        document.write("<br>----------------------------<br>");
+
+        // ----nested while loop----
+        document.write("nested while loop<br>");
+        i=1;
+        while(i<=5){
+            j=1;
+            while(j<=5){
+                document.write(" * ");
+                j++;
+            }
+            document.write("<br>");
+            i++;
+        }
+         document.write("<br>----------------------------<br>");
+
+        // ----[task]to print pattern like given----
+        document.write("TASK-1 with nested for loop<br>");
+        // 1)with for loop
+        for(i=1;i<=3;i++){
+            for(j=1;j<=8;j++){
+                document.write(" * ")
+            }
+            document.write("<br>")
+        }
+            document.write("<br>----------------------------<br>");
+            // with for loop
+
+            // 2)with nested do while loop
+            document.write("TASK-1 with nested do while loop<br>");
+            i=1;
+            do{
+                j=1;
+                do{
+                    document.write(" * ");
+                    j++;
+                }while(j<=8);
+                document.write("<br>")
+                i++;
+            }while(i<=3);
+            document.write("<br>----------------------------<br>");
+            // nested do while loop
+
+            //3)with nested while loop
+            document.write("TASK-1 with nested while loop<br>");
+            i=1;
+            while(i<=3){
+                j=1;
+                while(j<=8){
+                    document.write(" * ");
+                    j++;
+                }
+                document.write("<br>");
+                i++;
+            }
+            document.write("<br>----------------------------<br>");
+            // with nested while loop
+
+        // [task] to print pattern like given
+        // with for loop
+        document.write("TASK-2 with for loop<br>");
+        for(i=1;i<=5;i++){
+            for(j=i;j<=5;j++){
+                document.write(" * ")
+            }
+            document.write("<br>")
+        }
+        document.write("<br>----------------------------<br>");
+        // with for loop
+
+         // 2)with nested do while loop
+         document.write("TASK-2 with do while loop<br>");
+            i=1;
+            do{
+                j=i;
+                do{
+                    document.write(" * ");
+                    j++;
+                }while(j<=5);
+                document.write("<br>")
+                i++;
+            }while(i<=5);
+            document.write("<br>----------------------------<br>");
+            // nested do while loop
+
+            //3)with nested while loop
+            document.write("TASK-2 with nested while loop<br>");
+            i=1;
+            while(i<=5){
+                j=i;
+                while(j<=5){
+                    document.write(" * ");
+                    j++;
+                }
+                document.write("<br>");
+                i++;
+            }
+            document.write("<br>----------------------------<br>");
+            // with nested while loop
+
+
+        // [TASK] to print pattern like given
+        // with for loop
+        document.write("TASK-3 with for loop<br>");
+        for(i=1;i<=5;i++){
+            for(j=1;j<=i;j++){
+                document.write(" * ")
+            }
+            document.write("<br>")
+        }
+        document.write("<br>----------------------------<br>");
+
+         // 2)with nested do while loop
+         document.write("TASK-3 with do while loop<br>");
+            i=1;
+            do{
+                j=1;
+                do{
+                    document.write(" * ");
+                    j++;
+                }while(j<=i);
+                document.write("<br>")
+                i++;
+            }while(i<=5);
+            document.write("<br>----------------------------<br>");
+            // nested do while loop
+
+            
+            //3)with nested while loop
+            document.write("TASK-3 with nested while loop<br>");
+            i=1;
+            while(i<=5){
+                j=1;
+                while(j<=i){
+                    document.write(" * ");
+                    j++;
+                }
+                document.write("<br>");
+                i++;
+            }
+            document.write("<br>----------------------------<br>");
+            // with nested while loop
+
+        // task to print pattern like given
+        document.write("TASK-4 with for loop<br>");
+        for(i=1;i<=5;i++){
+            for(j=1;j<=i;j++){
+                document.write(j)
+            }
+            document.write("<br>")
+        }
+        document.write("<br>----------------------------<br>");
+
+        // 2)with nested do while loop
+         document.write("TASK-4 with do while loop<br>");
+            i=1;
+            do{
+                j=1;
+                do{
+                    document.write(j);
+                    j++;
+                }while(j<=i);
+                document.write("<br>")
+                i++;
+            }while(i<=5);
+            document.write("<br>----------------------------<br>");
+            // nested do while loop
+
+            
+            //3)with nested while loop
+            document.write("TASK-4 with nested while loop<br>");
+            i=1;
+            while(i<=5){
+                j=1;
+                while(j<=i){
+                    document.write(j);
+                    j++;
+                }
+                document.write("<br>");
+                i++;
+            }
+            document.write("<br>----------------------------<br>");
+            // with nested while loop
+
+         // task to print pattern like given
+         document.write("TASK-5 with for loop<br>");
+        for(i=1;i<=5;i++){
+            for(j=1;j<=i;j++){
+                document.write(i)
+            }
+            document.write("<br>")
+        }
+        document.write("<br>----------------------------<br>");
+
+        // 2)with nested do while loop
+         document.write("TASK-5 with do while loop<br>");
+            i=1;
+            do{
+                j=1;
+                do{
+                    document.write(i);
+                    j++;
+                }while(j<=i);
+                document.write("<br>")
+                i++;
+            }while(i<=5);
+            document.write("<br>----------------------------<br>");
+            // nested do while loop
+
+            
+            //3)with nested while loop
+            document.write("TASK-5 with nested while loop<br>");
+            i=1;
+            while(i<=5){
+                j=1;
+                while(j<=i){
+                    document.write(i);
+                    j++;
+                }
+                document.write("<br>");
+                i++;
+            }
+            document.write("<br>----------------------------<br>");
+            // with nested while loop
+
+         // task to print pattern like given
+         document.write("TASK-6 with for loop<br>");
+        for(i=1;i<=5;i++){
+            for(j=1;j<=i;j++){
+                document.write(i+j)
+            }
+            document.write("<br>")
+        }
+        document.write("<br>----------------------------<br>");
+
+        // 2)with nested do while loop
+         document.write("TASK-6 with do while loop<br>");
+            i=1;
+            do{
+                j=1;
+                do{
+                    document.write(i+j);
+                    j++;
+                }while(j<=i);
+                document.write("<br>")
+                i++;
+            }while(i<=5);
+            document.write("<br>----------------------------<br>");
+            // nested do while loop
+
+            
+            //3)with nested while loop
+            document.write("TASK-6 with nested while loop<br>");
+            i=1;
+            while(i<=5){
+                j=1;
+                while(j<=i){
+                    document.write(i+j);
+                    j++;
+                }
+                document.write("<br>");
+                i++;
+            }
+            document.write("<br>----------------------------<br>");
+            // with nested while loop
+
+        // task to print pattern like given
+        document.write("TASK-7 with for loop<br>");
+        for(i=1;i<=5;i++){
+            for(j=1;j<=5;j++){
+                document.write(i*j)
+            }
+            document.write("<br>")
+        }
+        document.write("<br>----------------------------<br>");
+
+        // 2)with nested do while loop
+         document.write("TASK-7 with do while loop<br>");
+            i=1;
+            do{
+                j=1;
+                do{
+                    document.write(i*j);
+                    j++;
+                }while(j<=5);
+                document.write("<br>")
+                i++;
+            }while(i<=5);
+            document.write("<br>----------------------------<br>");
+            // nested do while loop
+
+            
+            //3)with nested while loop
+            document.write("TASK-7 with nested while loop<br>");
+            i=1;
+            while(i<=5){
+                j=1;
+                while(j<=5){
+                    document.write(i*j);
+                    j++;
+                }
+                document.write("<br>");
+                i++;
+            }
+            document.write("<br>----------------------------<br>");
+            // with nested while loop
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>keyboards events</title>
+</head>
+<body>
+    <div id="box" class="test">
+        <h1>Text Box</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt accusantium corrupti sunt dignissimos ad necessitatibus reiciendis aperiam hic vero dolor veritatis laudantium quo quae vel recusandae, quisquam atque error fuga.</p>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+        // keypress(),keyup(),keydown()
+        $(document).ready(function(){
+            // keypress()-pressing any key changes the color
+            $('body').keypress(function(){
+                $(this).css('color','green');
+            });
+            // keyup()-when releasing the button
+            $('body').keyup(function(){
+                $(this).css('color','yellow');
+            });
+            // keydown()-when preessing arrow keys
+            $('body').keydown(function(){
+                $(this).css('color','red');
+            });
+        })
+
+    </script>
+</body>
+</html>

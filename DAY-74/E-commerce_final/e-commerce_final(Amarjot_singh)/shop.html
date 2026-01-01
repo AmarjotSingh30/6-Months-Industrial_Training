@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop_page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="shop-main">
+        
+         <!-- box 1 -->
+        <!-- Top Info Bar -->
+            <div class="top-bar">
+                <div class="top-left">
+                    <p>Free shipping, 30-day return or refund guarantee.</p>
+                </div>
+
+                <div class="top-right">
+                    <a href="#">Gift Card</a>
+                    <a href="#">Track Order</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+
+        <!-- box 1 -->
+
+         <!-- navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+
+                        <!-- links -->
+                        <div class="nav-links" id="navLinks">
+                            <ul>
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="shop.html">SHOP</a></li>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">PAGES</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- icons -->
+                        <div class="icons">
+                            <i class="fa-solid fa-magnifying-glass" id="icon_1"></i>
+                            <i class="fa-solid fa-cart-shopping" id="icon_1"></i>
+                            <i class="fa-regular fa-user" id="icon_1"></i>
+
+                            <!-- hamburger -->
+                            <div class="hamburger" id="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- navbar -->   
+                <!-- javascript -->
+                <script>
+                    const hamburger = document.getElementById("hamburger");
+                    const navLinks = document.getElementById("navLinks");
+
+                    hamburger.addEventListener("click", () => {
+                        navLinks.classList.toggle("active");
+                    });
+                </script>
+                <!-- javascript -->
+
+        <!-- navbar -->
+
+
+<!-- shop box1 -->
+      <div class="shop-box1">
+    
+    <!-- Category Tag -->
+    <span class="shop-tag">Category: All Products</span>
+
+    <!-- Main Title -->
+    <h4 class="shop-title">Shop</h4>
+
+    <!-- Trust Indicator -->
+    <div class="shop-trust">
+        <i class="fa-solid fa-shield-check"></i> 100% Genuine Products
+    </div>
+
+    <!-- Breadcrumb -->
+    <p class="shop-breadcrumb">
+        <a href="index.html">Home</a> 
+        <i class="fa-solid fa-angle-right"></i> 
+        <span>Shop</span>
+    </p>
+
+    <!-- Offer Banner -->
+    <div class="shop-offer-banner">
+        🔥 This Week: Extra 15% OFF on selected items
+    </div>
+
+</div>
+<!-- shop box1 -->
+
+
+
+
+  <!-- SHOP SECTION -->
+<div class="shop-wrapper">
+
+   <div class="sidebar">
+
+    <!-- Search -->
+    <div class="sidebar-box">
+        <div class="search-box">
+            <input type="text" placeholder="Search product...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+
+    <!-- DROPDOWN ITEM -->
+    <div class="dropdown-item">
+        <div class="dropdown-header">
+            <h4>Categories</h4>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="dropdown-content">
+            <ul>
+                <li><a href="#">Men's Clothing</a></li>
+                <li><a href="#">Women's Clothing</a></li>
+                <li><a href="#">Electronics</a></li>
+                <li><a href="#">Home Appliances</a></li>
+                <li><a href="#">Shoes</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown-item">
+        <div class="dropdown-header">
+            <h4>Brand</h4>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="dropdown-content">
+            <ul>
+                <li><label><input type="checkbox"> Nike</label></li>
+                <li><label><input type="checkbox"> Adidas</label></li>
+                <li><label><input type="checkbox"> Puma</label></li>
+                <li><label><input type="checkbox"> Samsung</label></li>
+                <li><label><input type="checkbox"> Apple</label></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="dropdown-item">
+        <div class="dropdown-header">
+            <h4>Filter Price</h4>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="dropdown-content">
+            <input type="range" min="0" max="2000" value="500" class="price-range">
+            <p class="price-values">Price: ₹0 — ₹2000</p>
+        </div>
+    </div>
+
+    <div class="dropdown-item">
+        <div class="dropdown-header">
+            <h4>Size</h4>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="dropdown-content size-options">
+            <span>S</span>
+            <span>M</span>
+            <span>L</span>
+            <span>XL</span>
+            <span>XXL</span>
+        </div>
+    </div>
+
+    <div class="dropdown-item">
+        <div class="dropdown-header">
+            <h4>Colors</h4>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="dropdown-content color-options">
+            <span class="color c1"></span>
+            <span class="color c2"></span>
+            <span class="color c3"></span>
+            <span class="color c4"></span>
+            <span class="color c5"></span>
+        </div>
+    </div>
+
+    <div class="dropdown-item">
+        <div class="dropdown-header">
+            <h4>Tags</h4>
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+        <div class="dropdown-content tags">
+            <span>Fashion</span>
+            <span>New</span>
+            <span>Popular</span>
+            <span>Sale</span>
+            <span>Trending</span>
+        </div>
+    </div>
+
+</div>
+
+
+    <!-- RIGHT CONTENT -->
+    <div class="shop-content">
+
+        <!-- Top Bar -->
+        <div class="shop-top">
+            <p>Showing 1–12 of 126 results</p>
+            <select class="sort-select">
+                <option>Sort by Price</option>
+                <option>Low to High</option>
+                <option>High to Low</option>
+                <option>Newest</option>
+            </select>
+        </div>
+
+        <!-- PRODUCT GRID -->
+        <div class="product-grid">
+
+            <!-- PRODUCT CARD (repeat 12 times demo) -->
+            <div class="product-card">
+                <img src="images/product-1.jpg" alt="">
+                <a href="product_details.html"><h5>Product Name</h5></a>
+                <div class="rating">★★★★★</div>
+                <p class="price">₹999 <span class="old">₹1299</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+            <div class="product-card">
+                <img src="images/product-2.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+             <div class="product-card">
+                <img src="images/product-3.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+             <div class="product-card">
+                <img src="images/product-4.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+             <div class="product-card">
+                <img src="images/product-6.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div> 
+
+             <div class="product-card">
+                <img src="images/product-9.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+             <div class="product-card">
+                <img src="images/product-12.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+             <div class="product-card">
+                <img src="images/product-5.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+             <div class="product-card">
+                <img src="images/product-6.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+             <div class="product-card">
+                <img src="images/product-8.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+             <div class="product-card">
+                <img src="images/product-5.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+             <div class="product-card">
+                <img src="images/product-3.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+             <div class="product-card">
+                <img src="images/product-12.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+             <div class="product-card">
+                <img src="images/product-13.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+             <div class="product-card">
+                <img src="images/product-10.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+             <div class="product-card">
+                <img src="images/product-2.jpg" alt="">
+                <h5>Smart Watch</h5>
+                <div class="rating">★★★★☆</div>
+                <p class="price">₹1499 <span class="old">₹1999</span></p>
+                <button class="add-cart">Add to Cart</button>
+            </div>
+
+            <!-- add total 12 items -->
+            <!-- copy same structure -->
+        </div>
+
+        <!-- PAGINATION -->
+        <div class="pagination-container">
+            <ul class="pagination">
+                <li><a href="shop.html" class="page-prev">«</a></li>
+                <li><a href="shop.html" class="page-number active">1</a></li>
+                <li><a href="#" class="page-number">2</a></li>
+                <li><a href="#" class="page-number">3</a></li>
+                <li><a href="#" class="page-next">»</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+
+
+
+        <!-- footer -->
+<div class="footer">
+    <div class="footer-inbox1">
+
+        <!-- Column 1: Logo + Social + About -->
+        <div class="footer-inbox-dbox1">
+            <div class="footer-social">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+
+            <h4>EISER <span id="dot"></span></h4>
+            <p>The customer is at the heart of our unique business model, which includes design.</p>
+            
+            <div class="card-img-box">
+                <img src="images/payment.png" alt="Payment Methods">
+            </div>
+        </div>
+
+        <!-- Column 2: Shopping Links -->
+        <div class="footer-inbox-dbox1">
+            <h3>Shopping</h3>
+            <p>Clothing Store</p>
+            <p>Men's Fashion</p>
+            <p>Accessories</p>
+            <p>Sale</p>
+        </div>
+
+        <!-- Column 3: Top Products -->
+        <div class="footer-inbox-dbox1">
+            <h3>Top Products</h3>
+            <p>Managed Website</p>
+            <p>Power Tools</p>
+            <p>Marketing Service</p>
+            <p>Best Deals</p>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-inbox-dbox1">
+            <h3>NEWSLETTER</h3>
+            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+            <div class="newsletter-box">
+                <input type="email" placeholder="Your email">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <p id="copyright">© 2025 EISER — All Rights Reserved</p>
+</div>
+<!-- footer -->
+    <!-- main -->
+    </div>
+    <!-- main -->
+     <script>
+document.querySelectorAll('.dropdown-header').forEach(header => {
+    header.addEventListener('click', () => {
+        const parent = header.parentElement;
+        parent.classList.toggle('active');
+    });
+});
+</script>
+
+</body>
+</html>

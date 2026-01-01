@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        // declaring array
+        var marks=[44,77,88,44,33,55];
+        // printing array
+        // document.write(marks[0]+"<br>")
+        // using array with for loop
+        // for(var i=0;i<marks.length;i++){
+            // [.lenght] is pre defined which picks whole array lenght 
+        //     document.write(marks[i]+"<br>")
+        // }
+
+        // with do-while loop
+        // var i;
+        // i=0;
+        // do{ 
+        //     document.write(marks[i]+"<br>");
+        //     i++;
+        // }while(i<marks.length);
+
+        // with while loop
+        // while(i<marks.length){
+        //     document.write(marks[i]+"<br>");
+        //     i++;
+        // }
+
+        // task-1 to sum all the numbers in array
+        document.write("Task-1 sum of all numbers in an array<br>")
+        var sum=0;
+        var nmbr=[1,2,3,4,5];
+        // for loop
+        for(var i=0;i<nmbr.length;i++){
+            sum+=nmbr[i];
+        }
+        document.write("sum of given number in array are="+ sum +"<br>");
+
+
+        // task-2 find even number only in array
+        document.write("Task-2 even numbers in an array<br>")
+            for(var i=0;i<nmbr.length;i++){
+                if(nmbr[i]%2==0){
+                    document.write("given even numbers in given array are="+ nmbr[i] +"<br>");
+                }
+        }
+
+        // Task-3 print table of an array element
+        // array
+        // var table=[2,4,6,8,9];
+        // // for loop
+        // for(var i=0;i<table.length;i++){
+        //     for(var j=1;j<=10;j++){
+        //         document.write(table[i]+"*"+j+"="+table[i]*j+"<br>")
+        //     }
+        // }
+
+        // Task-4 print factorial of array elements
+        document.write("Task-4 printing factorial of array element :-<br>")
+        // array
+        var array1=[3,6];
+        // variable fact
+        var fact=1;
+        // for loop [for array elements]
+        for(var i=0;i<array1.length;i++){
+            // inside loop
+            for(j=1;j<=array1[i];j++){
+                fact*=j;
+            }
+            document.write("Factorial:"+fact+"<br>");
+            fact=1
+        }
+
+        // task-5 print reverse of array
+        var array2=[1,22,33,4];
+        for(var i=array2.length-1;i>=0;i--){
+            document.write(array2[i]+"<br>");
+        }
+
+
+    </script>
+</body>
+</html>

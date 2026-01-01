@@ -1,0 +1,11 @@
+/--mysql--/
+1)CREATE DATABASE datbase_name
+2)CREATE TABLE emp(id int ,name VARCHAR(30),email VARCHAR(30));
+3)INSERT INTO emp VALUES(1,"Amar","amar@gmail.com")
+4)SELECT * FROM emp;
+/-----PRIMARY KEY & AUTO INCREMENT-----/
+5)CREATE TABLE emp1(id int PRIMARY KEY AUTO_INCREMENT,name VARCHAR(30),email VARCHAR(30));
+6)INSERT INTO emp1(name,email) VALUES("Amar","amar@gmail.com")
+/-----PRIMARY KEY & AUTO INCREMENT-----/
+7)UPDATE emp1 SET email="rahul@gmail.com" WHERE id=2
+8)DELETE FROM emp1 WHERE id=1;

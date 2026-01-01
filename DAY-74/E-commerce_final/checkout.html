@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="shop-main">
+        <!-- box 1 -->
+        <!-- Top Info Bar -->
+            <div class="top-bar">
+                <div class="top-left">
+                    <p>Free shipping, 30-day return or refund guarantee.</p>
+                </div>
+
+                <div class="top-right">
+                    <a href="#">Gift Card</a>
+                    <a href="#">Track Order</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+
+        <!-- box 1 -->
+
+       <!-- navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+
+                        <!-- links -->
+                        <div class="nav-links" id="navLinks">
+                            <ul>
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="shop.html">SHOP</a></li>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">PAGES</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- icons -->
+                        <div class="icons">
+                            <i class="fa-solid fa-magnifying-glass" id="icon_1"></i>
+                            <i class="fa-solid fa-cart-shopping" id="icon_1"></i>
+                            <i class="fa-regular fa-user" id="icon_1"></i>
+
+                            <!-- hamburger -->
+                            <div class="hamburger" id="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- navbar -->   
+                <!-- javascript -->
+                <script>
+                    const hamburger = document.getElementById("hamburger");
+                    const navLinks = document.getElementById("navLinks");
+
+                    hamburger.addEventListener("click", () => {
+                        navLinks.classList.toggle("active");
+                    });
+                </script>
+                <!-- javascript -->
+
+        <!-- navbar -->
+
+          <!-- shop box1 -->
+      <div class="shop-box1">
+    
+    <!-- Category Tag -->
+    <span class="shop-tag">Category: All Products</span>
+
+    <!-- Main Title -->
+    <h4 class="shop-title">Shop</h4>
+
+    <!-- Trust Indicator -->
+    <div class="shop-trust">
+        <i class="fa-solid fa-shield-check"></i> 100% Genuine Products
+    </div>
+
+    <!-- Breadcrumb -->
+    <p class="shop-breadcrumb">
+        <a href="index.html">Home</a> 
+        <i class="fa-solid fa-angle-right"></i> 
+        <span>Shop</span>
+    </p>
+
+    <!-- Offer Banner -->
+    <div class="shop-offer-banner">
+        🔥 This Week: Extra 15% OFF on selected items
+    </div>
+
+</div>
+<!-- shop box1 -->
+
+        <!-- CHECKOUT CONTENT BOX -->
+<div class="checkout-box">
+
+    <!-- LEFT SECTION (Billing Details) -->
+    <div class="checkout-left">
+
+        <div class="coupon-box">
+            <p><i class="fa-solid fa-tag"></i> Have a coupon?</p>
+            <a href="#">Click here to apply</a>
+        </div>
+
+        <h3 class="section-title">Billing Details</h3>
+
+        <div class="two-input">
+            <div class="input-group">
+                <label>First Name</label>
+                <input type="text">
+            </div>
+
+            <div class="input-group">
+                <label>Last Name</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="input-group">
+            <label>Country</label>
+            <input type="text">
+        </div>
+
+        <div class="input-group">
+            <label>Address</label>
+            <input type="text" placeholder="Street address">
+            <input type="text" placeholder="Apartment, suite, etc.">
+        </div>
+
+        <div class="input-group">
+            <label>Town / City</label>
+            <input type="text">
+        </div>
+
+        <div class="input-group">
+            <label>State / Country</label>
+            <input type="text">
+        </div>
+
+        <div class="input-group">
+            <label>Postcode / ZIP</label>
+            <input type="text">
+        </div>
+
+        <div class="two-input">
+            <div class="input-group">
+                <label>Phone</label>
+                <input type="text">
+            </div>
+
+            <div class="input-group">
+                <label>Email</label>
+                <input type="text">
+            </div>
+        </div>
+
+        <div class="extra-box">
+            <a href="#">Create an account?</a>
+
+            <label style="margin-top: 15px;">Ship to different address?</label>
+            <textarea></textarea>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SECTION (Your Order Summary) -->
+    <div class="checkout-right">
+
+        <h3 class="order-title">YOUR ORDER</h3>
+            <div class="divider"></div>
+
+
+        <div class="order-items">
+            <div class="row">
+                <p>Q1.</p><span>$20.00</span>
+            </div>
+            <div class="row">
+                <p>Q2.</p><span>$20.00</span>
+            </div>
+            <div class="row">
+                <p>Q3.</p><span>$20.00</span>
+            </div>
+            <div class="row">
+                <p>Q4.</p><span>$20.00</span>
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="order-total">
+            <div class="row">
+                <p>Subtotal</p><span>$20.00</span>
+            </div>
+            <div class="row">
+                <p>Shipping</p><span>$20.00</span>
+            </div>
+            <div class="row total-bold">
+                <p>Total</p><span>$20.00</span>
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <div class="payment-box">
+            <label><input type="radio"> Paypal</label>
+            <p>Lorem ipsum send it on the way</p>
+        </div>
+
+        <button class="place-order">Place Order</button>
+
+    </div>
+</div>
+
+                   
+                  <!-- footer -->
+<div class="footer">
+    <div class="footer-inbox1">
+
+        <!-- Column 1: Logo + Social + About -->
+        <div class="footer-inbox-dbox1">
+            <div class="footer-social">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+
+            <h4>EISER <span id="dot"></span></h4>
+            <p>The customer is at the heart of our unique business model, which includes design.</p>
+            
+            <div class="card-img-box">
+                <img src="images/payment.png" alt="Payment Methods">
+            </div>
+        </div>
+
+        <!-- Column 2: Shopping Links -->
+        <div class="footer-inbox-dbox1">
+            <h3>Shopping</h3>
+            <p>Clothing Store</p>
+            <p>Men's Fashion</p>
+            <p>Accessories</p>
+            <p>Sale</p>
+        </div>
+
+        <!-- Column 3: Top Products -->
+        <div class="footer-inbox-dbox1">
+            <h3>Top Products</h3>
+            <p>Managed Website</p>
+            <p>Power Tools</p>
+            <p>Marketing Service</p>
+            <p>Best Deals</p>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-inbox-dbox1">
+            <h3>NEWSLETTER</h3>
+            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+            <div class="newsletter-box">
+                <input type="email" placeholder="Your email">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <p id="copyright">© 2025 EISER — All Rights Reserved</p>
+</div>
+<!-- footer -->
+
+         <!-- main -->
+        </div>
+        <!-- main -->
+</body>
+</html>

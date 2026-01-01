@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product_details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+   <div class="shop-main">
+        
+         <!-- box 1 -->
+        <!-- Top Info Bar -->
+            <div class="top-bar">
+                <div class="top-left">
+                    <p>Free shipping, 30-day return or refund guarantee.</p>
+                </div>
+
+                <div class="top-right">
+                    <a href="#">Gift Card</a>
+                    <a href="#">Track Order</a>
+                    <a href="#">Contact Us</a>
+                </div>
+            </div>
+
+        <!-- box 1 -->
+
+         <!-- navbar -->
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/logo.png" alt="logo">
+            </div>
+
+                        <!-- links -->
+                        <div class="nav-links" id="navLinks">
+                            <ul>
+                                <li><a href="#">HOME</a></li>
+                                <li><a href="shop.html">SHOP</a></li>
+                                <li><a href="#">BLOG</a></li>
+                                <li><a href="#">PAGES</a></li>
+                                <li><a href="#">CONTACT</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- icons -->
+                        <div class="icons">
+                            <i class="fa-solid fa-magnifying-glass" id="icon_1"></i>
+                            <i class="fa-solid fa-cart-shopping" id="icon_1"></i>
+                            <i class="fa-regular fa-user" id="icon_1"></i>
+
+                            <!-- hamburger -->
+                            <div class="hamburger" id="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </nav>
+                    <!-- navbar -->   
+
+         <div class="lux-product-viewer">
+
+    <!-- Vertical Thumbnails -->
+    <div class="lux-thumbs">
+        <img src="images/product-1.jpg" onclick="luxChange(this)" class="lux-thumb active">
+        <img src="images/product-2.jpg" onclick="luxChange(this)" class="lux-thumb">
+        <img src="images/product-12.jpg" onclick="luxChange(this)" class="lux-thumb">
+        <img src="images/product-5.jpg" onclick="luxChange(this)" class="lux-thumb">
+    </div>
+
+    <!-- Main Display -->
+    <div class="lux-main-box">
+        <img id="luxMainImg" src="images/product-1.jpg" class="lux-main-img">
+        <div class="lux-zoom"></div>
+    </div>
+ <script>
+         function luxChange(el) {
+    document.getElementById("luxMainImg").src = el.src;
+
+    document.querySelectorAll(".lux-thumb").forEach(t => 
+        t.classList.remove("active")
+    );
+
+    el.classList.add("active");
+}
+</script>
+</div>
+
+
+
+        <!-- product details box2 -->
+            <div class="product_details_box2">
+                <h3 id="product_name">Hooded thermal anorak</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i><p id="product_reviews"> - 5 reviews</p><br>
+                <p id="final_price">$20.00</p>
+                <p id="final_discounted_price"><del>$20.00</del></p>
+                <p id="product_description"> Coat with quilted lining and an adjustable hood. Featuring long sleeves with adjustable cuff tabs, adjustable asymmetric hem with elastic side tabs and a front zip fastening with placket.</p>
+
+                <!--///// color and size selctor///// -->
+                <div class="product-options">
+                <!-- Color Selector -->
+                <div class="color-options">
+                    <h4>Color:<p id="selectedColor">Selected: None</p></h4>
+                    <div class="colors">
+                    <span class="color" data-color="Red" style="background:red;"></span>
+                    <span class="color" data-color="Blue" style="background:blue;"></span>
+                    <span class="color" data-color="Black" style="background:black;"></span>
+                    <span class="color" data-color="Green" style="background:green;"></span>
+                    </div>
+                    <!-- <p id="selectedColor">Selected: None</p> -->
+                </div>
+
+                <!-- Size Selector -->
+                <div class="size-options">
+                    <h4>Size:<p id="selectedSize">Selected: None</p></h4>
+                    <div class="sizes">
+                    <span class="size">S</span>
+                    <span class="size">M</span>
+                    <span class="size">L</span>
+                    <span class="size">XL</span>
+                    </div>
+                    <!-- <p id="selectedSize">Selected: None</p> -->
+                </div>
+                </div>
+                <!-- quantity selector -->
+                    <div class="shop_cart_content-box-inbox1-dbox2-quantity2">
+                        <button class="qty-btn" id="minus">-</button>
+                        <span id="quantity">1</span>
+                        <button class="qty-btn" id="plus">+</button>
+                    </div>
+                <!-- quantity selector -->
+                 <a href="shopping_cart.html"><button id="add_to_cart">ADD TO CART</button></a><br>
+                 <p id="product_categories">categories:clothes</p>
+                 <p id="product_tag">tag:skin</p>
+                <script>
+                    // color and size selector
+                    const colors = document.querySelectorAll(".color");
+                    const sizes = document.querySelectorAll(".size");
+                    const selectedColor = document.getElementById("selectedColor");
+                    const selectedSize = document.getElementById("selectedSize");
+
+                    // Color selection
+                    colors.forEach(c => {
+                    c.addEventListener("click", () => {
+                        colors.forEach(col => col.classList.remove("active"));
+                        c.classList.add("active");
+                        selectedColor.textContent = "Selected: " + c.dataset.color;
+                    });
+                    });
+
+                    // Size selection
+                    sizes.forEach(s => {
+                    s.addEventListener("click", () => {
+                        sizes.forEach(size => size.classList.remove("active"));
+                        s.classList.add("active");
+                        selectedSize.textContent = "Selected: " + s.textContent;
+                    });
+                    });
+                    // color and size selector
+
+                    // quantity selector
+
+                    let qty = 1;
+                    const quantitySpan = document.getElementById("quantity");
+
+                    document.getElementById("plus").addEventListener("click", () => {
+                        qty++;
+                        quantitySpan.innerText = qty;
+                    });
+
+                    document.getElementById("minus").addEventListener("click", () => {
+                        if(qty > 1){
+                            qty--;
+                            quantitySpan.innerText = qty;
+                        }
+                    });
+                    // quantity selector
+                </script>
+                <!-- ////color and size selector ////-->
+            </div>
+        <!-- product details box2 -->
+
+        <!-- product details box3 -->
+            <div class="product_details_box3">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event,'Description')">Description</button>
+                    <button class="tablinks" onclick="openCity(event,'Specifications')">Specifications</button>
+                    <button class="tablinks" onclick="openCity(event,'comments')">comments</button>
+                    <button class="tablinks" onclick="openCity(event,'customer_reviews')">customer reviews</button>
+                </div>
+
+                <div id="Description" class="tabcontent">
+                  <section class="product-desc">
+                    <div class="desc-header">
+                        <!-- <h5>Product Description</h5> -->
+                        <p>Bring style and comfort together with our premium edition wear.</p>
+                    </div>
+                    <div class="desc-content">
+                        <div class="desc-text">
+                        <p>
+                            Crafted with top-quality materials, this product offers both durability and
+                            a soft, breathable feel. Ideal for daily wear, it adapts to your movement and keeps
+                            you comfortable all day long.
+                        </p>
+                        <ul>
+                            <li>✔ Premium cotton blend</li>
+                            <li>✔ Wrinkle-resistant texture</li>
+                            <li>✔ Lightweight and flexible fit</li>
+                            <li>✔ Eco-friendly dyes</li>
+                        </ul>
+                        </div>
+                        <div class="desc-image">
+                        <img src="images/blog-2.jpg" alt="Product Description Image">
+                        </div>
+                    </div>
+                    </section>
+                </div>
+
+                <div id="Specifications" class="tabcontent">
+                    <section class="product-specs">
+                        <!-- <h3>⚙️ Specifications</h3> -->
+                        <div class="specs-table">
+                            <div><span>Material:</span> 100% Organic Cotton</div>
+                            <div><span>Fit Type:</span> Modern Regular Fit</div>
+                            <div><span>Sizes:</span> S, M, L, XL, XXL</div>
+                            <div><span>Color Options:</span> Red, Black, Blue, Olive</div>
+                            <div><span>Wash Care:</span> Machine Wash Cold, Gentle Cycle</div>
+                            <div><span>Origin:</span> Made in India 🇮🇳</div>
+                        </div>
+                        </section>
+                </div>
+                 <div id="comments" class="tabcontent">
+                    <section class="product-comments">
+                        <!-- <h3>💬 Customer Comments</h3> -->
+                        <div class="comment">
+                            <img src="images/blog-2.jpg" alt="User">
+                            <div class="comment-body">
+                            <h4>Rohit Sharma <span>• 2 days ago</span></h4>
+                            <p>Super comfy! Love the texture and feel. Totally worth it 😍</p>
+                            </div>
+                        </div>
+
+                        <div class="comment">
+                            <img src="images/blog-3.jpg" alt="User">
+                            <div class="comment-body">
+                            <h4>Anjali Verma <span>• 1 week ago</span></h4>
+                            <p>Nice fabric but the delivery took a bit longer than expected.</p>
+                            </div>
+                        </div>
+
+                        <div class="add-comment">
+                            <textarea placeholder="Write your comment..."></textarea>
+                            <button>Post Comment</button>
+                        </div>
+                        </section>
+                </div>
+
+                <div id="customer_reviews" class="tabcontent">
+                    <div class="reviews-section">
+                    <!-- <h2>Customer Reviews</h2> -->
+
+                       
+
+                        
+
+                        <!-- Add a New Review -->
+                        <div class="reviews-wrapper">
+
+    <!-- LEFT SIDE: Overall rating + customer reviews -->
+    <div class="reviews-left">
+
+        <!-- Overall Rating -->
+        <div class="overall-rating-box">
+            <h2>4.7 <span>/ 5</span></h2>
+            <div class="stars">★★★★☆</div>
+            <p>Based on 128 Reviews</p>
+        </div>
+
+        <!-- Rating Breakdown -->
+        <div class="rating-breakdown">
+            <div class="rate-row"><span>5 ★</span><div class="bar"><div style="width: 85%;"></div></div></div>
+            <div class="rate-row"><span>4 ★</span><div class="bar"><div style="width: 60%;"></div></div></div>
+            <div class="rate-row"><span>3 ★</span><div class="bar"><div style="width: 30%;"></div></div></div>
+            <div class="rate-row"><span>2 ★</span><div class="bar"><div style="width: 10%;"></div></div></div>
+            <div class="rate-row"><span>1 ★</span><div class="bar"><div style="width: 5%;"></div></div></div>
+        </div>
+
+        <!--  CUSTOMER REVIEW CARD 1 -->
+        <div class="review-card">
+            <img src="https://i.pravatar.cc/100" alt="">
+            <div>
+                <h4>John Michael</h4>
+                <div class="stars small">★★★★★</div>
+                <p>Great quality product! Highly recommended.</p>
+            </div>
+        </div>
+
+        <!--  CUSTOMER REVIEW CARD 2 -->
+        <div class="review-card">
+            <img src="https://i.pravatar.cc/99" alt="">
+            <div>
+                <h4>Emma Watson</h4>
+                <div class="stars small">★★★★☆</div>
+                <p>Loved the packaging and fast delivery.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SIDE: Your form (UNCHANGED) -->
+    <div class="reviews-right">
+        <h3>Write Your Review</h3>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Write your comment..." required></textarea>
+            <button type="submit">Post Review</button>
+        </form>
+    </div>
+
+</div>
+
+                    </div>
+                </div>
+                <script>
+                    function openCity(evt,tabName){
+                        var i,tabcontent,tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for(i=0;i < tabcontent.length;i++){
+                            tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for(i=0;i< tablinks.length;i++){
+                            tablinks[i].className = tablinks[i].className.replace("active","");
+                        }
+                        document.getElementById(tabName).style.display = "block";
+                        evt.currentTarget.className +="active";
+                    }
+                    document.addEventListener("DOMContentLoaded",function(){
+                        document.getElementById("Description").style.display ="block";
+                    });
+                </script>
+            </div>
+        <!-- product details box3 -->
+
+        <!-- product details box4 -->
+            <div class="product_details_box4">
+                <h3>Related Products</h3>
+                    <div class="product_details_box4-inbox1">
+                        <div class="product_details_box4-inbox1-dbox1">
+                            <img src="images/product-7.jpg">
+                                <h4>jacket</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p id="price">$20.00</p>
+                        </div>
+                         <div class="product_details_box4-inbox1-dbox1">
+                            <img src="images/product-7.jpg">
+                                <h4>jacket</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p id="price">$20.00</p>
+                         </div>
+                          <div class="product_details_box4-inbox1-dbox1">
+                            <img src="images/product-7.jpg">
+                                <h4>jacket</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p id="price">$20.00</p>
+                          </div>
+                           <div class="product_details_box4-inbox1-dbox1">
+                            <img src="images/product-7.jpg">
+                                <h4>jacket</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p id="price">$20.00</p>
+                           </div>
+                    </div>
+            </div>
+        <!-- product details box4 -->
+
+
+         <!-- footer -->
+<div class="footer">
+    <div class="footer-inbox1">
+
+        <!-- Column 1: Logo + Social + About -->
+        <div class="footer-inbox-dbox1">
+            <div class="footer-social">
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-x-twitter"></i>
+            </div>
+
+            <h4>EISER <span id="dot"></span></h4>
+            <p>The customer is at the heart of our unique business model, which includes design.</p>
+            
+            <div class="card-img-box">
+                <img src="images/payment.png" alt="Payment Methods">
+            </div>
+        </div>
+
+        <!-- Column 2: Shopping Links -->
+        <div class="footer-inbox-dbox1">
+            <h3>Shopping</h3>
+            <p>Clothing Store</p>
+            <p>Men's Fashion</p>
+            <p>Accessories</p>
+            <p>Sale</p>
+        </div>
+
+        <!-- Column 3: Top Products -->
+        <div class="footer-inbox-dbox1">
+            <h3>Top Products</h3>
+            <p>Managed Website</p>
+            <p>Power Tools</p>
+            <p>Marketing Service</p>
+            <p>Best Deals</p>
+        </div>
+
+        <!-- Column 4: Newsletter -->
+        <div class="footer-inbox-dbox1">
+            <h3>NEWSLETTER</h3>
+            <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+            <div class="newsletter-box">
+                <input type="email" placeholder="Your email">
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+
+    </div>
+
+    <p id="copyright">© 2025 EISER — All Rights Reserved</p>
+</div>
+<!-- footer -->
+
+        <!-- main -->
+        </div>
+        <!-- main -->
+</body>
+</html>

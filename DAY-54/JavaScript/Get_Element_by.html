@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element by</title>
+</head>
+<body>
+    <h1>The document object</h1>
+    <h1>The getElementById() Method</h1>
+    <p id="demo"></p>
+
+    <script>
+        // get element by its id
+        document.getElementById("demo").innerHTML = "Hello world";
+
+        // storing into variable
+        const myElement = document.getElementById("demo");
+
+        // using that variable
+        myElement.style.color="red";
+
+        // changing the color
+        document.getElementById("demo").style.color = "green";
+
+
+        // form validation
+
+
+    </script>
+</body>
+</html>

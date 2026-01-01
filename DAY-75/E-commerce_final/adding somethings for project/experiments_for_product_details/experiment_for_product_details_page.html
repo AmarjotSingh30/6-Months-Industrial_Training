@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    .product-gallery {
+    width: 40%;
+    border:2px solid #ddd;
+    padding:10px;
+}
+
+.main-img {
+    width:100%;
+    height:auto;
+    border-radius:5px;
+    margin-bottom:10px;
+    border:1px solid #ccc;
+}
+
+.thumbs {
+    display:flex;
+    gap:10px;
+}
+
+.thumbs img {
+    width:60px;
+    height:60px;
+    cursor:pointer;
+    border-radius:5px;
+    border:2px solid transparent;
+    transition:0.3s;
+}
+
+.thumbs img:hover {
+    border-color:green;
+    transform:scale(1.1);
+}
+
+    </style>
+</head>
+<body>
+    <div class="product-gallery">
+    <img id="mainImage" src="images/blog-1.jpg" class="main-img">
+
+    <div class="thumbs">
+        <img src="images/blog-1.jpg" class="thumb">
+        <img src="images/blog-2.jpg" class="thumb">
+        <img src="images/blog-3.jpg" class="thumb">
+        <img src="images/blog-4.jpg" class="thumb">
+    </div>
+    <script>
+        const mainImg = document.getElementById("mainImage");
+        const thumbs = document.querySelectorAll(".thumb");
+
+        thumbs.forEach(img => {
+            img.addEventListener("click", () => {
+                mainImg.src = img.src;
+            });
+        });
+</script>
+</div>
+</body>
+</html>

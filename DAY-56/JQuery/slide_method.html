@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slide method</title>
+</head>
+<body>
+    <h1>jquery method slide up and down</h1>
+
+    <div id="box">
+        <h2>text box</h2>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea alias, rerum nesciunt aperiam voluptas voluptates nisi vitae doloremque consequuntur soluta fugiat ipsum quo possimus ipsam pariatur harum id hic magni!</p>
+    </div>
+    
+    <button id="slideup">slideup</button>
+    <button id="slidedown">slidedown</button>
+    <button id="slidetoggle">slidetoggle</button>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+             $(document).ready(function(){
+                $('#slideup').click(function(){
+                    $('#box').slideUp("slow");
+                });
+
+                 $('#slidedown').click(function(){
+                    $('#box').slideDown("fast");
+                });
+
+                 $('#slidetoggle').click(function(){
+                    $('#box').slideToggle(1000,function(){
+                        console.log("new toggle slide")
+                    });
+                });
+                
+             });
+        </script>
+</body>
+</html>

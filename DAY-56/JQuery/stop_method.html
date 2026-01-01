@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>stop method</title>
+    <style>
+        #box{
+            height: 100px;
+            width: 100px;
+            background-color: pink;
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <h1>jquery stop method </h1>
+
+    <div id="box">
+        <h2>stop</h2>
+    </div>
+    
+    <button id="animatebtn">animate</button>
+    <button id="stopbtn">stop</button>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+        <script>
+             $(document).ready(function(){
+                $('#animatebtn').click(function(){
+                    $('#box').animate({left:'200px'},3000);
+                });
+
+                 $('#stopbtn').click(function(){
+                    $('#box').stop();
+                });
+
+                
+             });
+        </script>
+</body>
+</html>

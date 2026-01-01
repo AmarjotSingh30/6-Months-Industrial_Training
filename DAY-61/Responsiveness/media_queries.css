@@ -1,0 +1,118 @@
+/* responsiveness */
+@media (max-width:579px){
+    .links{
+        /* display: none; */
+        flex-direction: column;
+        background-color: red;
+        background-color: transparent;
+        position: absolute;
+        top:60px;
+        right: 0;
+        width: 322px;
+        /* text-align: right; */
+        padding: 10px;
+    }
+    .in-links{
+        /* width: 49%; */
+        /* position: absolute; */
+        background-color: aqua;
+       margin-top: -2%;
+    }
+    .hamburger{
+        width: 90%;
+        height: 100%;
+        display: block;
+        background-color: white;
+        /* border: 2px solid rgba(0,0,0,0.1); */
+        /* border-radius: 100%; */
+        /* margin:-8% 0% 0% 50%; */
+        font-size:19px;
+    }
+    .hamburger i{
+        margin-left: 80%;
+        margin-top: 4%;
+    }
+    .in-links a{
+        display: block;
+    }
+    .img-box1{
+        height:10%;
+    }
+    .project-box{
+        height: 50%;
+        width: 100%;
+        /* border: 2px solid red; */
+    }
+    .project-box-inbox1{
+        /* border: 2px solid yellow; */
+        height: 3%;
+        padding-left: 6%;
+    }
+    .project-box-inbox2{
+        height: 70%;
+        /* border: 5px solid black; */
+    }
+    .project-box-inbox2-dinbox1{
+        height: 90%;
+        /* border: 2px solid red; */
+        flex-direction: column;
+    }
+    .project-box-inbox2-dinbox1-imgbox{
+        width: 90%;
+        height: 100%;
+        /* border: 2px solid purple; */
+        margin-top: 4%;
+        margin-left: 4%;
+    }
+    .project-box-inbox2-dinbox2{
+        height: 90%;
+        /* border: 2px solid red; */
+        flex-direction: column;
+    }
+    .project-box-inbox2-dinbox2-imgbox{
+        width: 90%;
+        height: 100%;
+        /* border: 2px solid purple; */
+        margin-top: 4%;
+        margin-left: 4%;
+    }
+    .about-us-project-box{
+        /* border: 5px solid red; */
+        margin-top: 120%;
+    }
+    .about-us-project-box-inbox1 h4{
+        padding-left: 8%;
+    }
+    .about-us-project-box-inbox2 p{
+        text-align: left;
+        padding:0% 8% 0% 8%;
+    }
+    .about-us-project-box-inbox3{
+        /* border: 5px solid black; */
+        margin-top: 15%;
+        flex-direction: column;
+    }
+    .about-us-project-box-inbox3-dbox1{
+        width: 75%;
+        /* border: 2px solid yellow; */
+        margin-left: 10%;
+        margin-top: 4%;
+    }
+    .contact-project-box{
+        /* border: 5px solid red; */
+        margin-top: 250%;
+    }
+    .contact-project-box-inbox1 h4{
+        padding-left: 10%;
+    }
+    .inputs{
+        /* border: 2px solid red; */
+        margin-left: 10%;
+    }
+    .last-img-box{
+        width: 90%;
+        margin-left: 4%;
+        /* border: 2px solid red; */
+    }
+}
+/* responsiveness */

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1. simple function
+        function greet(){
+            document.write("Hello World<br>");
+        }
+
+        function add(){
+            var x=parseInt(prompt("Enter first number: "));
+            var y=parseInt(prompt("Enter second number: "));
+            document.write("Addition: "+(x+y)+"<br>");
+        }
+        //2. parametrised and argument function
+        // parameter
+        function product(a,b){
+            document.write("Product: "+(a*b)+"<br>");
+        }
+
+        // 3. return function
+        function sub(a,b){
+            return a-b;
+        }
+        // calling a function
+        greet()
+        // calling a function
+        document.write("Subtraction: "+sub(78,34)+"<br>");
+        //  add()
+        // argument
+        product(33,6)
+        // argument
+        greet()
+        greet()
+        //add()
+        greet()
+
+        // task-1 create a electricity bill making system with function
+        // function
+        // function bill(units){
+        //     if(units>=1 && units<=600){
+        //         document.write("NIL")
+        //     }
+        //     else if(units>=601 && units<=700){
+        //         document.write("bill is :"+units*3)
+        //     }
+        //     else if(units>=701 && units<=800){
+        //         document.write("bill is :"+units*4)
+        //     }
+        //     else if(units>=801 && units<=900){
+        //         document.write("bill is :"+units*5)
+        //     }
+        // }
+        // // calling a function
+        // bill(units=parseInt(prompt("Enter The Units Amount:")))
+
+        // task 2 pass 5 arguments and return the total
+        function total(eng,pun,hin,sci,math){
+            return eng+pun+hin+sci+math
+        }
+        ttl=total(89,54,78,99,66)
+
+        function avg(a){
+            document.write("Average: "+(a/5))
+        }
+        avg(ttl)
+    </script>
+</body>
+</html>

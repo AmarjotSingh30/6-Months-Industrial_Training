@@ -1,0 +1,80 @@
+.main-box2{
+    width: 100%;
+    height: 10%;
+    border:0.1px solid rgb(243, 239, 239);
+    background:url(images/banner-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.main-box2-inbox1{
+    width: 32%;
+    height: 50%;
+    /* border:2px solid blue; */
+    margin-top: 15%;
+    text-align: left;
+    align-content: center;
+    padding-left: 5%;
+    margin-left: 5%;
+    line-height: 40px;
+}
+.main-box2-inbox1 h4{
+    color: white;
+    font-size: 14px;
+    margin-bottom: 2%;
+}
+#show{
+    color: #71cd14;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 2%;
+}
+#your{
+    /* color: red; */
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+}
+#personal{
+    /* color: red; */
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+    margin-right: 2%;
+}
+#style{
+    color: #71cd14;
+    display: inline-block;
+    font-size: 50px;
+    font-weight: bold;
+}
+.main-box2-inbox1 p{
+    color: white;
+}
+.main-box2-inbox1 button{
+    width: 50%;
+    height: 15%;
+    background-color: #71cd14;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 5%;
+}
+html:-
+ <!-- box3 -->
+            <div class="main-box2">
+                <div class="main-box2-inbox1">
+                    <h4>MEN COLLECTION</h4>
+                    <p id="show">Show</p>
+                    <p id="your">Your</p>
+                    <p id="personal">Personal</p>
+                    <p id="style">Style</p>
+                    <p>Pick your desire</p>
+                    <button>VIEW COLLECTION</button>
+                </div>
+            </div>
+            <!-- javascript -->
+
+             <!-- javascript -->
+        <!-- box3 -->

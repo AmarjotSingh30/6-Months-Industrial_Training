@@ -1,0 +1,205 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: 500vh;
+    /* border: 5px solid red; */
+}
+.navbar{
+    width: 100%;
+    height: 9%;
+    /* border: 2px solid black; */
+    position: fixed;
+    display: flex;
+}
+.logo{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid green; */
+    background-color: white;
+}
+.logo h1{
+    font-size: 29px;
+    font-weight: lighter;
+}
+.links{
+    width: 50%;
+    height: 100%;
+    /* border: 2px solid purple; */
+    align-content: center;
+    text-align: center;
+    padding-left:29%;
+    background-color: white;
+}
+.in-links a{
+    margin-left: 2%;
+    font-size: 22px;
+    color:black;
+    text-decoration: none;
+}
+/* responsive navbar */
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+/* responsive navbar */
+
+.img-box1{
+    width: 100%;
+    height: 20%;
+    /* border: 2px solid aqua; */
+    background: url(images/img_2.jpg),linear-gradient(rgba(43, 41, 41, 0.9),rgba(23, 24, 24, 0.9));
+    background-position: center;
+    background-size: 100% 100%;
+    text-align: center;
+    align-content: center;
+}
+.project-box{
+    width: 100%;
+    height: 20%;
+    /* border: 2px solid purple; */
+    margin-top: 4%;
+}
+.project-box-inbox1{
+    width: 100%;
+    height: 12%;
+    /* border: 2px solid blue; */
+}
+.project-box-inbox1 h4{
+    font-size: 19px;
+}
+.project-box-inbox2{
+    width: 100%;
+    height: 87%;
+    /* border: 2px solid red; */
+    margin-top: 2%;
+}
+.project-box-inbox2-dinbox1{
+    width: 100%;
+    height: 40%;
+    /* border: 2px solid aqua; */
+    display: flex;
+    justify-content: space-between;
+}
+.project-box-inbox2-dinbox1-imgbox{
+    width: 23%;
+    height: 100%;
+    /* border: 2px solid purple; */
+    background: url(images/img_1.jpg);
+    background-size: 100% 100%;
+}
+.project-box-inbox2-dinbox1-imgbox button{
+    width: 30%;
+    height: 14%;
+    background-color: black;
+    color: white;
+}
+.project-box-inbox2-dinbox2{
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid gold; */
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+.project-box-inbox2-dinbox2-imgbox{
+    width: 23%;
+    height: 100%;
+    /* border: 2px solid green; */
+    background: url(images/img_1.jpg);
+    background-size: 100% 100%;
+}
+.project-box-inbox2-dinbox2-imgbox button{
+    width: 30%;
+    height: 14%;
+    background-color: black;
+    color: white;
+}
+
+/* about us box */
+.about-us-project-box{
+    width: 100%;
+    height: 20%;
+    /* border: 2px solid purple; */
+    margin-top: 4%;
+}
+.about-us-project-box-inbox1{
+    width: 100%;
+    height: 12%;
+    /* border: 2px solid blue; */
+}
+.about-us-project-box-inbox2{
+    width: 100%;
+    height: 22%;
+    /* border: 2px solid aqua; */
+}
+.about-us-project-box-inbox3{
+    width: 100%;
+    height: 60%;
+    /* border: 2px solid yellow; */
+    display: flex;
+    justify-content: space-between;
+}
+.about-us-project-box-inbox3-dbox1{
+    width: 22%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+.about-us-project-box-inbox3-dbox1 img{
+    width: 100%;
+    height: 50%;
+}
+/* about us box */
+
+/* contact box */
+.contact-project-box{
+    width: 100%;
+    height: 60%;
+    /* border: 2px solid green; */
+    margin-top: 4%;
+}
+.contact-project-box-inbox1{
+    width: 100%;
+    height: 19%;
+    /* border: 2px solid red; */
+}
+.inputs{
+    width: 40%;
+    height: 40%;
+    /* border: 2px solid black; */
+}
+/* contact box */
+
+/* last img box */
+.last-img-box{
+    width: 100%;
+    height: 150%;
+}
+.last-img-box img{
+    height: 100%;
+    width: 100%;
+}
+/* last img box */
+
+/* last box */
+.last-img-box{
+    width: 100%;
+    height: 200%;
+    /* border: 2px solid red; */
+}
+/*last box */
+
+/* footer */
+ .footer{
+        background-color: black;
+        color: white;
+        margin-top: 10%;
+        text-align: center;
+    }
+/* footer */
+
+
+  
