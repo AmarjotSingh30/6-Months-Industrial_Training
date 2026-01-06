@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shop_page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="shop-main">
+         <!-- box 1 -->
+        <div class="shop-main-box1">
+            <!-- inside box1 -->
+            <div class="main-box1-inside-box1">
+                <p>Free shipping, 30-day return or refund guarantee.</p>
+                <!-- <p>PHONE:+01 256 25 235</p> -->
+            </div>
+            <!-- inside box2 -->
+            <div class="main-box1-inside-box2"></div>
+            <!-- inside box3-->
+            <div class="main-box1-inside-box3">
+                <div class="gift-card">
+                    <p>GIFT CARD</p>
+                </div>
+                <div class="track-order">
+                    <p>TRACK ORDER</p>
+                </div>
+                <div class="contact-us">
+                    <p>CONTACT US</p>
+                </div>
+            </div>
+        </div>
+        <!-- box 1 -->
+
+        <!-- navbar -->
+        <div class="shop-navbar">
+            <!-- logo -->
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <!-- logo -->
+            <!-- links -->
+            <div class="links">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- links -->
+            <!-- icons -->
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <!-- icons -->
+            </div>
+        <!-- navbar -->
+
+        <!--shop box1 -->
+            <div class="shop-box1">
+                <h4>Shop</h4>
+                <p id="shop-text1"><a href="index.html">Home<i class="fa-solid fa-angle-right"></i></a></p>
+                <p id="shop-text2">Shop</p>
+            </div>
+        <!--shop box1 -->
+
+        <!-- shop-box2 -->
+            <div class="shop-box2">
+                <!-- inbox1 -->
+                <div class="shop-box2-inbox1">
+                    <div class="shop-box2-inbox1-dbox1">
+                        <input type="text" placeholder="search..."><i class="fa-solid fa-magnifying-glass"></i>
+                        <!-- <div class="search-box"></div> -->
+                    </div>
+                    <!-- <div class="shop-box2-inbox1-dbox2"> -->
+                        <!-- categories box -->
+                        <div class="categories-box">
+                            <h4>Categories</h4><button id="togglebtn"><i class="fa-solid fa-angle-down"></i></button>
+                            <!-- jquery -->
+                            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+                            <script>
+                                $(document).ready(function(){
+                                    // toggle btn
+                                    $('#togglebtn').click(function(){
+                                        $('.categories-internal-boxes-parent').slideToggle("slow");
+                                    });
+                                });
+                            </script>
+                            <!-- jquery -->
+
+                        </div>
+                        <div class="categories-internal-boxes-parent">
+                        <!-- internal boxes -->
+                            <ul>
+                                <li>mens(20)</li>
+                                <li>Womens(20)</li>
+                                <li>kids(20)</li>
+                                <li>bags(20)</li>
+                                <li>accessories(20)</li>
+                                <li>clothing(20)</li>
+                            </ul>
+                        </div>
+                        <!-- categories box -->
+
+                        <!-- brand box -->
+                         <div class="brand-box">
+                            <h4>Branding</h4><button id="togglebtn2"><i class="fa-solid fa-angle-down"></i></button>
+                            <!-- jquery -->
+                            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+                            <script>
+                                $(document).ready(function(){
+                                    // toggle btn
+                                    $('#togglebtn2').click(function(){
+                                        $('.brand-internal-boxes-parent2').slideToggle("slow");
+                                    });
+                                });
+                            </script>
+                            <!-- jquery -->
+
+                        </div>
+                        <div class="brand-internal-boxes-parent2">
+                        <!-- internal boxes -->
+                            <ul>
+                                <li>luis(20)</li>
+                                <li>gucci(20)</li>
+                                <li>reebox(20)</li>
+                                <li>nike(20)</li>
+                                <li>puma(20)</li>
+                                <li>fashion(20)</li>
+                            </ul>
+                        </div>
+                    <!-- brandbox -->
+
+                    <!-- price filter -->
+                         <div class="price-box1">
+                            <h4>Price Filtering</h4><button id="togglebtn4"><i class="fa-solid fa-angle-down"></i></button>
+                            <!-- jquery -->
+                            <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+                            <script>
+                                $(document).ready(function(){
+                                    // toggle btn
+                                    $('#togglebtn4').click(function(){
+                                        $('.price-internal-boxes-parent3').slideToggle("slow");
+                                    });
+                                });
+                            </script>
+                            <!-- jquery -->
+
+                        </div>
+                        <div class="price-internal-boxes-parent3">
+                        <!-- internal boxes -->
+                            <ul>
+                                <li>luis(20)</li>
+                                <li>gucci(20)</li>
+                                <li>reebox(20)</li>
+                                <li>nike(20)</li>
+                                <li>puma(20)</li>
+                                <li>fashion(20)</li>
+                            </ul>
+                        </div>
+                    <!-- price filter -->
+                    </div>
+                <!-- </div> -->
+                <!-- inbox1 -->
+
+                <!-- inbox2 -->
+                <div class="shop-box2-inbox2">
+                    <!-- text1 -->
+                    <p id="inbox2-text1">Showing 1-12 of 126 result</p>
+                     <!-- text2 -->
+                    <p id="inbox2-text2">Sort by Price:Low to high</p>
+                    <!-- image boxs start -->
+                     <div class="product-box-parent">
+                     <!-- box -->
+                    <div class="product-box">
+                        <img src="images/product-1.jpg">
+                        <h4>jacket</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p id="price">$20.00</p>
+                    </div>
+                    <!-- box -->
+                     <!-- box -->
+                    <div class="product-box">
+                        <img src="images/product-2.jpg">
+                        <h4>jacket</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p id="price">$20.00</p>
+                    </div>
+                    <!-- box -->
+                     <!-- box -->
+                    <div class="product-box">
+                        <img src="images/product-3.jpg">
+                        <h4>jacket</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p id="price">$20.00</p>
+                    </div>
+                    <!-- box -->
+                     <!-- box -->
+                    <div class="product-box">
+                        <img src="images/product-4.jpg">
+                        <h4>jacket</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p id="price">$20.00</p>
+                    </div>
+                    <!-- box -->
+                     <!-- box -->
+                    <div class="product-box">
+                        <img src="images/product-5.jpg">
+                        <h4>jacket</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p id="price">$20.00</p>
+                    </div>
+                    <!-- box -->
+                     <!-- box -->
+                    <div class="product-box">
+                        <img src="images/product-6.jpg">
+                        <h4>jacket</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p id="price">$20.00</p>
+                    </div>
+                    <!-- box -->
+                     <!-- box -->
+                    <div class="product-box">
+                        <img src="images/product-7.jpg">
+                        <h4>jacket</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p id="price">$20.00</p>
+                    </div>
+                    <!-- box -->
+                     <!-- box -->
+                    <div class="product-box">
+                        <img src="images/product-8.jpg">
+                        <h4>jacket</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p id="price">$20.00</p>
+                    </div>
+                    <!-- box -->
+                    <!-- box -->
+                    <div class="product-box">
+                        <img src="images/product-9.jpg">
+                        <h4>jacket</h4>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <p id="price">$20.00</p>
+                    </div>
+                    <!-- box -->
+                    <!-- image boxs start -->
+                     </div>
+                </div>
+            </div>
+        <!-- shop-box2 -->
+
+        <!-- footer -->
+        <div class="shop-footer">
+            <div class="footer-inbox1">
+                <div class="footer-inbox-dbox1">
+                    <h4>EISER</h4>
+                    <div id="dot"></div>
+                    <p>The customer is at the heart of our unique business model, which includes design.</p>
+                    <div class="card-img-box">
+                        <img src="images/payment.png">
+                    </div> 
+                </div>
+                <div class="footer-inbox-dbox1">
+                     <h3>Shopping</h3>
+                    <p>Clothing Store</p>
+                    <p>Clothing Store</p>
+                    <p>Accessories</p>
+                    <p>Sale</p>
+                </div>
+                <div class="footer-inbox-dbox1">
+                     <h3>Top Products</h3>
+                    <p>Managed Website</p>
+                    <p>Manage Reputation</p>
+                    <p>Power Tools</p>
+                    <p>Marketing Service</p>
+                </div>
+                <div class="footer-inbox-dbox1">
+                     <h3>NEWSLETTER</h3>
+                    <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                    <input type="email" placeholder="Your email"><i class="fa-solid fa-envelope"></i>
+                    <div class="stylish-email"></div>
+                </div>
+            </div>
+            <p id="copyright">Copyright © eiser All rights reserved |</p>
+        </div>
+        <!-- footer -->
+    <!-- main -->
+    </div>
+    <!-- main -->
+</body>
+</html>

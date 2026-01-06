@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product_details</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="product_details-main">
+
+         <!-- box 1 -->
+        <div class="product_details-main-box1">
+            <!-- inside box1 -->
+            <div class="main-box1-inside-box1">
+                <p>Free shipping, 30-day return or refund guarantee.</p>
+                <!-- <p>PHONE:+01 256 25 235</p> -->
+            </div>
+            <!-- inside box2 -->
+            <div class="main-box1-inside-box2"></div>
+            <!-- inside box3-->
+            <div class="main-box1-inside-box3">
+                <div class="gift-card">
+                    <p>GIFT CARD</p>
+                </div>
+                <div class="track-order">
+                    <p>TRACK ORDER</p>
+                </div>
+                <div class="contact-us">
+                    <p>CONTACT US</p>
+                </div>
+            </div>
+        </div>
+        <!-- box 1 -->
+
+         <!-- navbar -->
+        <div class="product_details-navbar">
+            <!-- logo -->
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <!-- logo -->
+            <!-- links -->
+            <div class="links">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- links -->
+            <!-- icons -->
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <!-- icons -->
+            </div>
+        <!-- navbar -->
+
+         <!--shop box1 -->
+            <div class="product_details_shop-box1">
+                <!-- <h4>Product Details</h4> -->
+                <a href="index.html">Home<i class="fa-solid fa-angle-right"></i></a>
+                <a href="shop.html">Shop<i class="fa-solid fa-angle-right"></i></a>
+                <p id="product_details_text2">Product details</p>
+
+                <!-- slider for images -->
+                    <div class="product-gallery">
+                            <img id="mainImage" src="images/blog-1.jpg" class="main-img">
+
+                            <div class="thumbs">
+                                <img src="images/blog-1.jpg" class="thumb">
+                                <img src="images/blog-2.jpg" class="thumb">
+                                <img src="images/blog-3.jpg" class="thumb">
+                                <img src="images/blog-4.jpg" class="thumb">
+                            </div>
+                            <script>
+                                const mainImg = document.getElementById("mainImage");
+                                const thumbs = document.querySelectorAll(".thumb");
+
+                                thumbs.forEach(img => {
+                                    img.addEventListener("click", () => {
+                                        mainImg.src = img.src;
+                                    });
+                                });
+                        </script>
+                    </div>
+                <!-- slider for images -->
+            </div>
+        <!--shop box1 -->
+
+        <!-- product details box2 -->
+            <div class="product_details_box2">
+                <h3>Hooded thermal anorak</h3>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <p>$20.00</p>
+                <p><del>$20.00</del></p>
+                <p> Coat with quilted lining and an adjustable hood. Featuring long sleeves with adjustable cuff tabs, adjustable asymmetric hem with elastic side tabs and a front zip fastening with placket.</p>
+
+                <!--///// color and size selctor///// -->
+                <div class="product-options">
+                <!-- Color Selector -->
+                <div class="color-options">
+                    <h4>Choose Color:</h4>
+                    <div class="colors">
+                    <span class="color" data-color="Red" style="background:red;"></span>
+                    <span class="color" data-color="Blue" style="background:blue;"></span>
+                    <span class="color" data-color="Black" style="background:black;"></span>
+                    <span class="color" data-color="Green" style="background:green;"></span>
+                    </div>
+                    <p id="selectedColor">Selected: None</p>
+                </div>
+
+                <!-- Size Selector -->
+                <div class="size-options">
+                    <h4>Choose Size:</h4>
+                    <div class="sizes">
+                    <span class="size">S</span>
+                    <span class="size">M</span>
+                    <span class="size">L</span>
+                    <span class="size">XL</span>
+                    </div>
+                    <p id="selectedSize">Selected: None</p>
+                </div>
+                </div>
+                <!-- quantity selector -->
+                    <div class="shop_cart_content-box-inbox1-dbox2-quantity2">
+                        <button class="qty-btn" id="minus">-</button>
+                        <span id="quantity">1</span>
+                        <button class="qty-btn" id="plus">+</button>
+                    </div>
+                <!-- quantity selector -->
+                 <button id="add_to_cart">ADD TO CART</button>
+                 <p>categories:clothes</p>
+                 <p>tag:skin</p>
+                <script>
+                    // color and size selector
+                    const colors = document.querySelectorAll(".color");
+                    const sizes = document.querySelectorAll(".size");
+                    const selectedColor = document.getElementById("selectedColor");
+                    const selectedSize = document.getElementById("selectedSize");
+
+                    // Color selection
+                    colors.forEach(c => {
+                    c.addEventListener("click", () => {
+                        colors.forEach(col => col.classList.remove("active"));
+                        c.classList.add("active");
+                        selectedColor.textContent = "Selected: " + c.dataset.color;
+                    });
+                    });
+
+                    // Size selection
+                    sizes.forEach(s => {
+                    s.addEventListener("click", () => {
+                        sizes.forEach(size => size.classList.remove("active"));
+                        s.classList.add("active");
+                        selectedSize.textContent = "Selected: " + s.textContent;
+                    });
+                    });
+                    // color and size selector
+
+                    // quantity selector
+
+                    let qty = 1;
+                    const quantitySpan = document.getElementById("quantity");
+
+                    document.getElementById("plus").addEventListener("click", () => {
+                        qty++;
+                        quantitySpan.innerText = qty;
+                    });
+
+                    document.getElementById("minus").addEventListener("click", () => {
+                        if(qty > 1){
+                            qty--;
+                            quantitySpan.innerText = qty;
+                        }
+                    });
+                    // quantity selector
+                </script>
+                <!-- ////color and size selector ////-->
+            </div>
+        <!-- product details box2 -->
+
+        <!-- product details box3 -->
+            <div class="product_details_box3">
+                <div class="tab">
+                    <button class="tablinks" onclick="openCity(event,'Description')">Description</button>
+                    <button class="tablinks" onclick="openCity(event,'customer_previews')">Customer Previews(5)</button>
+                    <button class="tablinks" onclick="openCity(event,'Additional_information')">Additional information</button>
+                </div>
+
+                <div id="Description" class="tabcontent">
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium tenetur molestias dolorem! Eos provident dolorum similique error delectus quis inventore, velit iusto maiores perferendis consequatur quod officia itaque, voluptatem vel?</h4>
+                    <h5>hello</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur distinctio eius nihil error commodi recusandae, vel provident omnis dolorum. Architecto illum est repudiandae vitae, assumenda nisi accusantium impedit ipsa inventore.</p>
+                </div>
+                <div id="customer_previews" class="tabcontent">
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium tenetur molestias dolorem! Eos provident dolorum similique error delectus quis inventore, velit iusto maiores perferendis consequatur quod officia itaque, voluptatem vel?</h4>
+                    <h5>bye</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur distinctio eius nihil error commodi recusandae, vel provident omnis dolorum. Architecto illum est repudiandae vitae, assumenda nisi accusantium impedit ipsa inventore.</p>
+                </div>
+                 <div id="Additional_information" class="tabcontent">
+                    <h4>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium tenetur molestias dolorem! Eos provident dolorum similique error delectus quis inventore, velit iusto maiores perferendis consequatur quod officia itaque, voluptatem vel?</h4>
+                    <h5>welcome back</h5>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequuntur distinctio eius nihil error commodi recusandae, vel provident omnis dolorum. Architecto illum est repudiandae vitae, assumenda nisi accusantium impedit ipsa inventore.</p>
+                </div>
+                <script>
+                    function openCity(evt,tabName){
+                        var i,tabcontent,tablinks;
+                        tabcontent = document.getElementsByClassName("tabcontent");
+                        for(i=0;i < tabcontent.length;i++){
+                            tabcontent[i].style.display = "none";
+                        }
+                        tablinks = document.getElementsByClassName("tablinks");
+                        for(i=0;i< tablinks.length;i++){
+                            tablinks[i].className = tablinks[i].className.replace("active","");
+                        }
+                        document.getElementById(tabName).style.display = "block";
+                        evt.currentTarget.className +="active";
+                    }
+                    document.addEventListener("DOMContentLoaded",function(){
+                        document.getElementById("Description").style.display ="block";
+                    });
+                </script>
+            </div>
+        <!-- product details box3 -->
+
+        <!-- product details box4 -->
+            <div class="product_details_box4">
+                <h3>Related Products</h3>
+                    <div class="product_details_box4-inbox1">
+                        <div class="product_details_box4-inbox1-dbox1">
+                            <img src="images/product-7.jpg">
+                                <h4>jacket</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p id="price">$20.00</p>
+                        </div>
+                         <div class="product_details_box4-inbox1-dbox1">
+                            <img src="images/product-7.jpg">
+                                <h4>jacket</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p id="price">$20.00</p>
+                         </div>
+                          <div class="product_details_box4-inbox1-dbox1">
+                            <img src="images/product-7.jpg">
+                                <h4>jacket</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p id="price">$20.00</p>
+                          </div>
+                           <div class="product_details_box4-inbox1-dbox1">
+                            <img src="images/product-7.jpg">
+                                <h4>jacket</h4>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <p id="price">$20.00</p>
+                           </div>
+                    </div>
+            </div>
+        <!-- product details box4 -->
+
+
+        <!-- footer -->
+        <div class="product_details-footer">
+            <div class="footer-inbox1">
+                <div class="footer-inbox-dbox1">
+                    <h4>EISER</h4>
+                    <div id="dot"></div>
+                    <p>The customer is at the heart of our unique business model, which includes design.</p>
+                    <div class="card-img-box">
+                        <img src="images/payment.png">
+                    </div> 
+                </div>
+                <div class="footer-inbox-dbox1">
+                     <h3>Shopping</h3>
+                    <p>Clothing Store</p>
+                    <p>Clothing Store</p>
+                    <p>Accessories</p>
+                    <p>Sale</p>
+                </div>
+                <div class="footer-inbox-dbox1">
+                     <h3>Top Products</h3>
+                    <p>Managed Website</p>
+                    <p>Manage Reputation</p>
+                    <p>Power Tools</p>
+                    <p>Marketing Service</p>
+                </div>
+                <div class="footer-inbox-dbox1">
+                     <h3>NEWSLETTER</h3>
+                    <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                    <input type="email" placeholder="Your email"><i class="fa-solid fa-envelope"></i>
+                    <div class="stylish-email"></div>
+                </div>
+            </div>
+            <p id="copyright">Copyright © eiser All rights reserved |</p>
+        </div>
+        <!-- footer -->
+
+        <!-- main -->
+        </div>
+        <!-- main -->
+</body>
+</html>

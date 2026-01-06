@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shopping_cart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="shop-main">
+         <!-- box 1 -->
+        <div class="shop-main-box1">
+            <!-- inside box1 -->
+            <div class="main-box1-inside-box1">
+                <p>Free shipping, 30-day return or refund guarantee.</p>
+                <!-- <p>PHONE:+01 256 25 235</p> -->
+            </div>
+            <!-- inside box2 -->
+            <div class="main-box1-inside-box2"></div>
+            <!-- inside box3-->
+            <div class="main-box1-inside-box3">
+                <div class="gift-card">
+                    <p>GIFT CARD</p>
+                </div>
+                <div class="track-order">
+                    <p>TRACK ORDER</p>
+                </div>
+                <div class="contact-us">
+                    <p>CONTACT US</p>
+                </div>
+            </div>
+        </div>
+        <!-- box 1 -->
+
+        <!-- navbar -->
+        <div class="shop-navbar">
+            <!-- logo -->
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <!-- logo -->
+            <!-- links -->
+            <div class="links">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">SHOP</a></li>
+                    <li><a href="#">BLOG</a></li>
+                    <li><a href="#">PAGES</a></li>
+                    <li><a href="#">CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- links -->
+            <!-- icons -->
+            <div class="icons">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
+                <i class="fa-regular fa-user"></i>
+            </div>
+            <!-- icons -->
+            </div>
+        <!-- navbar -->
+
+         <!--shop box1 -->
+            <div class="shop-box1">
+                <h4>Shopping Cart</h4>
+                <p id="shop-text1"><a href="index.html">Home<i class="fa-solid fa-angle-right"></i></a></p>
+                <p id="shop-text1"><a href="shop.html">Shop<i class="fa-solid fa-angle-right"></i></a></p>
+                <p id="shop-text2">Shopping cart</p>
+            </div>
+        <!--shop box1 -->
+
+            <!-- shop_cart_content-box -->
+            <div class="shop_cart_content-box">
+                <!-- inbox1 -->
+                <div class="shop_cart_content-box-inbox1">
+                    <!-- dbox1 -->
+                    <div class="shop_cart_content-box-inbox1-dbox1">
+                        <p id="shop-cart-product">Product</p>
+                        <p id="shop-cart-quantity">Quantity</p>
+                        <p id="shop-cart-total">Total</p>
+                    </div>
+                    <!-- dbox1 -->
+                     <!-- dbox2 -->
+                     <div class="shop_cart_content-box-inbox1-dbox2">
+                        <div class="shop_cart_content-box-inbox1-dbox2-imgbox"></div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-textbox">
+                            <p id="dbox2-textbox-text1">T-shirt</p>
+                            <p id="dbox2-textbox-text2">$20.00</p>
+                        </div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-quantity">
+                            <button class="minus">‹</button>
+                            <span class="qty-number">1</span>
+                            <button class="plus">›</button>
+                             <!-- javascript -->
+                                <script>
+                                    const qty = document.querySelector(".qty-number");
+                                    const plus = document.querySelector(".plus");
+                                    const minus = document.querySelector(".minus");
+                                    let count = 1;
+
+                                    plus.addEventListener("click", () => {
+                                        count++;
+                                        qty.textContent = count;
+                                    });
+
+                                    minus.addEventListener("click", () => {
+                                        if(count > 1) {
+                                            count--;
+                                            qty.textContent = count;
+                                        }
+                                    });
+                                </script> 
+
+                            <!-- javascript -->
+                        </div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-total">
+                            <p>$20.00</p>
+                        </div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-icon">
+                            <div class="background-circle">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                     </div>
+                     <!-- dbox2 -->
+
+                     <!-- dbox3 -->
+                     <div class="shop_cart_content-box-inbox1-dbox2">
+                        <div class="shop_cart_content-box-inbox1-dbox2-imgbox"></div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-textbox">
+                            <p id="dbox2-textbox-text1">T-shirt</p>
+                            <p id="dbox2-textbox-text2">$20.00</p>
+                        </div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-quantity">
+                            <button class="minus">‹</button>
+                            <span class="qty-number">1</span>
+                            <button class="plus">›</button>
+                        </div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-total">
+                            <p>$20.00</p>
+                        </div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-icon">
+                            <div class="background-circle">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                     </div>
+                     <!-- dbox3 -->
+
+                     <!-- dbox4 -->
+                     <div class="shop_cart_content-box-inbox1-dbox2">
+                        <div class="shop_cart_content-box-inbox1-dbox2-imgbox"></div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-textbox">
+                            <p id="dbox2-textbox-text1">T-shirt</p>
+                            <p id="dbox2-textbox-text2">$20.00</p>
+                        </div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-quantity">
+                            <button class="minus">‹</button>
+                            <span class="qty-number">1</span>
+                            <button class="plus">›</button>
+                        </div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-total">
+                            <p>$20.00</p>
+                        </div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-icon">
+                            <div class="background-circle">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                     </div>
+                     <!-- dbox4 -->
+
+                     <!-- dbox5 -->
+                     <div class="shop_cart_content-box-inbox1-dbox2">
+                        <div class="shop_cart_content-box-inbox1-dbox2-imgbox"></div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-textbox">
+                            <p id="dbox2-textbox-text1">T-shirt</p>
+                            <p id="dbox2-textbox-text2">$20.00</p>
+                        </div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-quantity">
+                            <button class="minus">‹</button>
+                            <span class="qty-number">1</span>
+                            <button class="plus">›</button>
+                        </div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-total">
+                            <p>$20.00</p>
+                        </div>
+                        <div class="shop_cart_content-box-inbox1-dbox2-icon">
+                            <div class="background-circle">
+                                <i class="fa-solid fa-xmark"></i>
+                            </div>
+                        </div>
+                     </div>
+                     <!-- dbox5 -->
+                      <!-- button1 -->
+                     <button id="Continue_Shopping">Continue Shopping</button>
+                     <!-- button1 -->
+                      <!-- button2 -->
+                     <button id="update_cart">update cart</button>
+                     <!-- button2 -->
+                </div>
+                <!-- inbox1 -->
+                 <!-- inbox2 -->
+                <div class="shop_cart_content-box-inbox2">
+                    <p id="Discount_codes">Discount codes</p>
+                    <input type="text" placeholder="coupon code"><button>APPLY</button>
+                    <div class="shop_cart_content-box-inbox2-dbox1">
+                        <h4>CART TOTAL</h4>
+                        <p id="subtotal">subtotal</p>
+                        <p id="subtotal-price">$90.00</p>
+                         <p id="total">total</p>
+                        <p id="total-price">$90.00</p>
+                        <button id="proceed">Proceed to checkout</button>
+                    </div>
+                </div>
+                <!-- inbox2 -->
+            </div>
+            <!-- shop_cart_content-box -->
+
+        <!-- footer -->
+        <div class="shop-footer">
+            <div class="footer-inbox1">
+                <div class="footer-inbox-dbox1">
+                    <h4>EISER</h4>
+                    <div id="dot"></div>
+                    <p>The customer is at the heart of our unique business model, which includes design.</p>
+                    <div class="card-img-box">
+                        <img src="images/payment.png">
+                    </div> 
+                </div>
+                <div class="footer-inbox-dbox1">
+                     <h3>Shopping</h3>
+                    <p>Clothing Store</p>
+                    <p>Clothing Store</p>
+                    <p>Accessories</p>
+                    <p>Sale</p>
+                </div>
+                <div class="footer-inbox-dbox1">
+                     <h3>Top Products</h3>
+                    <p>Managed Website</p>
+                    <p>Manage Reputation</p>
+                    <p>Power Tools</p>
+                    <p>Marketing Service</p>
+                </div>
+                <div class="footer-inbox-dbox1">
+                     <h3>NEWSLETTER</h3>
+                    <p>Be the first to know about new arrivals, look books, sales & promos!</p>
+                    <input type="email" placeholder="Your email"><i class="fa-solid fa-envelope"></i>
+                    <div class="stylish-email"></div>
+                </div>
+            </div>
+            <p id="copyright">Copyright © eiser All rights reserved |</p>
+        </div>
+        <!-- footer -->
+</body>
+</html>

@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+section{
+  width: 90%;
+  height: 400px;
+  margin: 40px auto;
+  font-family: "Poppins", sans-serif;
+  background: #fff;
+  border-radius: 12px;
+  border: 2px solid black;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 25px;
+}
+h3{
+  color: #333;
+  border-left: 5px solid #71cd14;
+  padding-left: 10px;
+  margin-bottom: 20px;
+  border: 2px solid red;
+}
+
+.product-desc .desc-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 2px solid purple;
+}
+
+.product-desc .desc-text {
+  flex: 1;
+}
+
+.product-desc .desc-text ul {
+  list-style: none;
+  padding: 0;
+  border: 2px solid yellow;
+}
+
+.product-desc .desc-text li {
+  padding: 6px 0;
+  color: #444;
+}
+
+.product-desc .desc-image img {
+  width: 280px;
+  border-radius: 10px;
+  border: 2px solid aqua;
+}
+
+/* Specs */
+.specs-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  border: 2px solid blue;
+}
+
+.specs-table div {
+  background: #f9f9f9;
+  padding: 10px;
+  border-radius: 6px;
+  border: 2px solid red;
+}
+
+.specs-table span {
+  font-weight: 600;
+  color: #555;
+  border: 2px solid yellow;
+}
+
+/* Comments */
+.comment {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  margin: 15px 0;
+}
+
+.comment img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.comment-body h4 {
+  margin: 0;
+  color: #333;
+}
+
+.comment-body span {
+  font-size: 13px;
+  color: #999;
+}
+
+.add-comment textarea {
+  width: 100%;
+  height: 80px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.add-comment button {
+  margin-top: 10px;
+  background: #71cd14;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* Reviews */
+.reviews-section {
+    width: 80%;
+    margin: 50px auto;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.review-box {
+    display: flex;
+    align-items: flex-start;
+    background: #f9f9f9;
+    border-radius: 12px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.review-box:hover {
+    transform: translateY(-2px);
+}
+
+.user-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 15px;
+    border: 2px solid #ddd;
+}
+
+.review-content h4 {
+    margin: 0;
+    color: #222;
+}
+
+.rating {
+    color: #f39c12;
+    margin: 5px 0;
+}
+
+.review-text {
+    margin-bottom: 10px;
+}
+
+.reply-btn {
+    background: none;
+    border: none;
+    color: #007bff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.reply-box {
+    display: none;
+    margin-top: 10px;
+}
+
+.reply-input {
+    width: 80%;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.send-reply-btn {
+    padding: 6px 10px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add-review {
+    background: #f5f5f5;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+}
+
+.add-review h3 {
+    margin-bottom: 10px;
+}
+
+.add-review input, .add-review textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+}
+
+.add-review button {
+    background: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-review button:hover {
+    background: #218838;
+}
+
+</style>
+<body>
+    <section class="product-desc">
+  <div class="desc-header">
+    <h3>✨ Product Description</h3>
+    <p>Bring style and comfort together with our premium edition wear.</p>
+  </div>
+  <div class="desc-content">
+    <div class="desc-text">
+      <p>
+        Crafted with top-quality materials, this product offers both durability and
+        a soft, breathable feel. Ideal for daily wear, it adapts to your movement and keeps
+        you comfortable all day long.
+      </p>
+      <ul>
+        <li>✔ Premium cotton blend</li>
+        <li>✔ Wrinkle-resistant texture</li>
+        <li>✔ Lightweight and flexible fit</li>
+        <li>✔ Eco-friendly dyes</li>
+      </ul>
+    </div>
+    <div class="desc-image">
+      <img src="images/blog-2.jpg" alt="Product Description Image">
+    </div>
+  </div>
+</section>
+
+<section class="product-specs">
+  <h3>⚙️ Specifications</h3>
+  <div class="specs-table">
+    <div><span>Material:</span> 100% Organic Cotton</div>
+    <div><span>Fit Type:</span> Modern Regular Fit</div>
+    <div><span>Sizes:</span> S, M, L, XL, XXL</div>
+    <div><span>Color Options:</span> Red, Black, Blue, Olive</div>
+    <div><span>Wash Care:</span> Machine Wash Cold, Gentle Cycle</div>
+    <div><span>Origin:</span> Made in India 🇮🇳</div>
+  </div>
+</section>
+
+    <section class="product-comments">
+  <h3>💬 Customer Comments</h3>
+  <div class="comment">
+    <img src="images/blog-2.jpg" alt="User">
+    <div class="comment-body">
+      <h4>Rohit Sharma <span>• 2 days ago</span></h4>
+      <p>Super comfy! Love the texture and feel. Totally worth it 😍</p>
+    </div>
+  </div>
+
+  <div class="comment">
+    <img src="images/blog-3.jpg" alt="User">
+    <div class="comment-body">
+      <h4>Anjali Verma <span>• 1 week ago</span></h4>
+      <p>Nice fabric but the delivery took a bit longer than expected.</p>
+    </div>
+  </div>
+
+  <div class="add-comment">
+    <textarea placeholder="Write your comment..."></textarea>
+    <button>Post Comment</button>
+  </div>
+</section>
+
+<div class="reviews-section">
+    <h2>Customer Reviews</h2>
+
+    <!-- Review 1 -->
+    <div class="review-box">
+        <img src="images/blog-4.jpg" alt="User 1" class="user-img">
+        <div class="review-content">
+            <h4>John Doe</h4>
+            <p class="rating">⭐⭐⭐⭐☆</p>
+            <p class="review-text">The product quality is excellent! Delivered on time and packaging was neat.</p>
+            <button class="reply-btn">Reply</button>
+
+            <!-- Reply Box (Hidden by default) -->
+            <div class="reply-box">
+                <input type="text" placeholder="Write a reply..." class="reply-input">
+                <button class="send-reply-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="review-box">
+        <img src="images/blog-6.jpg" alt="User 2" class="user-img">
+        <div class="review-content">
+            <h4>Sarah Smith</h4>
+            <p class="rating">⭐⭐⭐⭐⭐</p>
+            <p class="review-text">Loved the color options! Matches the description perfectly.</p>
+            <button class="reply-btn">Reply</button>
+
+            <div class="reply-box">
+                <input type="text" placeholder="Write a reply..." class="reply-input">
+                <button class="send-reply-btn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Add a New Review -->
+    <div class="add-review">
+        <h3>Write Your Review</h3>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <textarea placeholder="Write your comment..." required></textarea>
+            <button type="submit">Post Review</button>
+        </form>
+    </div>
+</div>
+
+
+</body>
+</html>

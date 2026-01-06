@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Effects Preview</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: "Poppins", sans-serif;
+    }
+    body {
+      background: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+
+    section {
+      margin: 40px auto;
+      width: 90%;
+      max-width: 900px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 30px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    /* 1️⃣ Image Hover Zoom */
+    .img-hover {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+    }
+    .img-hover:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    }
+
+    /* 2️⃣ Fade-in Animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+      text-align: center;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* 3️⃣ Button Hover Glow */
+    .btn-glow {
+      display: inline-block;
+      padding: 12px 30px;
+      background: #71cd14;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    .btn-glow:hover {
+      background-color: #5bb10f;
+      box-shadow: 0 0 15px #71cd14;
+      transform: translateY(-3px);
+    }
+
+    /* 4️⃣ Navbar Underline Effect */
+    .nav-demo {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .nav-demo a {
+      color: #333;
+      text-decoration: none;
+      font-weight: 500;
+      position: relative;
+    }
+    .nav-demo a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: -4px;
+      left: 0;
+      background-color: #71cd14;
+      transition: 0.3s ease;
+    }
+    .nav-demo a:hover::after {
+      width: 100%;
+    }
+
+    /* 5️⃣ Page Load Animation */
+    body {
+      animation: fadeInPage 0.8s ease;
+    }
+    @keyframes fadeInPage {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* 6️⃣ Responsive Preview */
+    .responsive-box {
+      background: #e8ffe0;
+      text-align: center;
+      padding: 40px;
+      border-radius: 10px;
+      transition: background 0.3s;
+    }
+
+    @media (max-width: 768px) {
+      .responsive-box {
+        background: #ffdcdc;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1️⃣ Image Hover Zoom -->
+  <section>
+    <h2>1️⃣ Image Hover Zoom</h2>
+    <img class="img-hover" src="https://images.unsplash.com/photo-1542291026-7eec264c27ff" alt="Product Image">
+  </section>
+
+  <!-- 2️⃣ Fade-In on Scroll -->
+  <section>
+    <h2>2️⃣ Fade-In on Scroll</h2>
+    <div class="fade-in" id="fadeBox">
+      <p>Scroll down... this text will fade in smoothly 🪄</p>
+    </div>
+  </section>
+
+  <!-- 3️⃣ Button Hover Glow -->
+  <section>
+    <h2>3️⃣ Button Hover Glow</h2>
+    <div style="text-align:center;">
+      <button class="btn-glow">Hover Me</button>
+    </div>
+  </section>
+
+  <!-- 4️⃣ Navbar Underline Hover -->
+  <section>
+    <h2>4️⃣ Navbar Underline Hover</h2>
+    <div class="nav-demo">
+      <a href="#">Home</a>
+      <a href="#">Shop</a>
+      <a href="#">About</a>
+      <a href="#">Contact</a>
+    </div>
+  </section>
+
+  <!-- 5️⃣ Page Load Animation -->
+  <section>
+    <h2>5️⃣ Page Load Animation</h2>
+    <p style="text-align:center;">This section fades in as soon as the page loads ⚡</p>
+  </section>
+
+  <!-- 6️⃣ Responsive Color Change -->
+  <section>
+    <h2>6️⃣ Responsive Preview</h2>
+    <div class="responsive-box">
+      Resize your browser window 👀  
+      <br>Background changes on smaller screens!
+    </div>
+  </section>
+
+  <script>
+    // Fade-in scroll animation
+    const elements = document.querySelectorAll('.fade-in');
+    window.addEventListener('scroll', () => {
+      elements.forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
